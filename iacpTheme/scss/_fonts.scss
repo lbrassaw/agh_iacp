@@ -1,0 +1,85 @@
+// This is a font file for some font styles.
+// It's currently blank but will have some styles.
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab|Roboto:400,400i');
+
+/* To use the above imported fonts */
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+html, .root {
+	font-size: 18px;
+	line-height: 31px;
+}
+body, .article {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 31px;
+	margin: auto;
+}
+h1, .h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 61px;
+	line-height: 62px;
+	margin-top: 31px;
+	margin-bottom: 62px;
+}
+h2, .h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 41px;
+	line-height: 62px;
+	margin-top: 31px;
+	margin-bottom: 31px;
+}
+h3, .h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	line-height: 31px;
+	margin-top: 31px;
+	margin-bottom: 0px;
+}
+h4, .h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 31px;
+	margin-top: 31px;
+	margin-bottom: 0px;
+}
+h5, .h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 31px;
+	margin-top: 31px;
+	margin-bottom: 0px;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 31px;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}

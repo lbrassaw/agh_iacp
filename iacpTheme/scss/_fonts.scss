@@ -23,6 +23,7 @@ body, .article {
 h1, .h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 61px;
+	font-weight: 600;
 	line-height: 62px;
 	margin-top: 31px;
 	margin-bottom: 62px;
@@ -30,6 +31,7 @@ h1, .h1 {
 h2, .h2 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 41px;
+	font-weight: 600;
 	line-height: 62px;
 	margin-top: 31px;
 	margin-bottom: 31px;
@@ -37,6 +39,7 @@ h2, .h2 {
 h3, .h3 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 27px;
+	font-weight: 600;
 	line-height: 31px;
 	margin-top: 31px;
 	margin-bottom: 0px;
@@ -44,6 +47,7 @@ h3, .h3 {
 h4, .h4 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+	font-weight: 600;
 	line-height: 31px;
 	margin-top: 31px;
 	margin-bottom: 0px;
@@ -68,9 +72,6 @@ ul ul, ol ol, ul ol, ol ul {
 hr, .hr {
   border: 1px solid;
   margin: -1px 0;
-}
-a, b, i, strong, em, small, code {
-  line-height: 0;
 }
 sub, sup {
   line-height: 0;

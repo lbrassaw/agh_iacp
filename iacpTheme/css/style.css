@@ -5883,6 +5883,13 @@ body {
   padding: 0;
   width: auto; }
 
+.navbar-collapse.collapse {
+  overflow: hidden !important; }
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff; }
+
 #overlay-container,
 .overlay-modal-background,
 .overlay-element {
@@ -6538,5 +6545,87 @@ sup {
 
 sub {
   bottom: -0.25em; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+a.name {
+  background: url("../logo.png") 0 0 no-repeat !important;
+  display: block;
+  width: 346px;
+  height: 74px;
+  text-indent: -10000px; }
+
+button.navbar-toggle {
+  background: url("images/hamburger.png") 0 0 no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px; }
+
+#superfish-1-toggle span {
+  display: none; }
+
+.not-front .div-line {
+  width: 100%;
+  height: 80px;
+  padding: 10px 0;
+  background-color: #214C6E;
+  color: white;
+  font-size: 15px; }
+  .not-front .div-line .breadcrumb {
+    padding: 8px 0;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent !important;
+    border-radius: 4px; }
+  .not-front .div-line .breadcrumb > .active {
+    color: white; }
+
+.not-front .main-container {
+  padding: 10vh 0; }
+
+.footer {
+  border: 0 none !important;
+  background-color: #214C6E;
+  color: white;
+  font-size: 15px; }
+  .footer a {
+    color: white;
+    text-transform: uppercase; }
+  .footer .nav > li > a:hover,
+  .footer .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent; }
+  .footer .social {
+    float: left;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    text-indent: -10000px;
+    margin-right: 10px; }
+    .footer .social :last-child {
+      float: none; }
+  .footer .footer-facebook {
+    background: url("images/facebook.png") 0 0 no-repeat; }
+  .footer .footer-twitter {
+    background: url("images/twitter.png") 0 0 no-repeat; }
+  .footer .footer-linkedin {
+    background: url("images/linkedin.png") 0 0 no-repeat; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #superfish-1-toggle {
+    float: right;
+    display: block;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    background: url("images/hamburger.png") 0 0 no-repeat;
+    background-size: 40px 40px; }
+    #superfish-1-toggle span {
+      display: block;
+      text-indent: -10000px; } }
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=style.css.map */

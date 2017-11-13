@@ -1,0 +1,43 @@
+
+.flexslider .slides img {
+  width: 650px;
+  max-width: 100%;
+  display: block;
+  float: right;
+  position: relative;
+}
+.flexslider {
+  margin: 0 !important;
+  background: $theme-blue;
+  border: 0 none !important;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.flex-control-nav {
+    bottom: 0;
+    z-index: 10;
+}
+.flex-control-paging li a {
+  background: white !important;
+  border: 1px solid $theme-gold;
+  -webkit-box-shadow: 0 none !important;
+  -moz-box-shadow: 0 none !important;
+  -o-box-shadow: 0 none !important;
+  box-shadow: 0 none !important;
+}
+.flex-control-paging li a:hover {
+  background: $theme-gold !important;
+  border: 1px solid $theme-blue !important;
+}
+.flex-control-paging li a.flex-active {
+  background: $theme-gold !important;
+  border: 1px solid $theme-blue !important;
+  cursor: default;
+}

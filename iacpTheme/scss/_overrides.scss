@@ -107,27 +107,31 @@ body {
 
 // Default navbar.
 .navbar {
-  &.container {
-    @media #{$tablet} {
-      max-width: (($container-sm - $grid-gutter-width));
-    }
-    @media #{$normal} {
-      max-width: (($container-md - $grid-gutter-width));
-    }
-    @media #{$wide} {
-      max-width: (($container-lg - $grid-gutter-width));
-    }
-  }
-  &.container,
-  &.container-fluid {
-    margin-top: 20px;
-  }
-  &.container > .container,
-  &.container-fluid > .container-fluid {
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
+     &.container {
+          @media #{$tablet} {
+               max-width: (($container-sm - $grid-gutter-width));
+          }
+          @media #{$normal} {
+               max-width: (($container-md - $grid-gutter-width));
+          }
+          @media #{$wide} {
+               max-width: (($container-lg - $grid-gutter-width));
+          }
+     }
+     &.container,
+     &.container-fluid {
+          margin-top: 20px;
+     }
+     &.container > .container,
+     &.container-fluid > .container-fluid {
+          margin: 0;
+          padding: 0;
+          width: auto;
+     }
+}
+.navbar-default {
+     background-color: #fff;
+     border-color: #fff;
 }
 
 // Adjust z-index of core components.

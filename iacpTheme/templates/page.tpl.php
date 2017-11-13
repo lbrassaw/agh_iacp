@@ -75,7 +75,7 @@
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?> ">
   <div class="<?php print $container_class; ?>">
-    <div class="navbar-header">
+    <div class="navbar-header col-xs-12 col-md-3">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -117,20 +117,28 @@
 <!-- Adds an extra div to create the line between the header and main content -->
 <div class="div-line">
   <div class="<?php print $container_class; ?>">
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+    <!-- <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?> -->
+  </div>
+</div>
+
+<!-- Start of header container -->
+<div class="header-full-width">
+  <div class="header-container <?php print $container_class; ?>">
+    <header role="banner" id="page-header">
+      <?php if (!empty($site_slogan)): ?>
+        <p class="lead"><?php print $site_slogan; ?></p>
+      <?php endif; ?>
+
+      <?php print render($page['header']); ?>
+    </header> <!-- /#page-header -->
   </div>
 </div>
 
 <!-- Start of main container -->
 <div class="main-container <?php print $container_class; ?>">
 
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
+  <!-- Add breadcrumb -->
+  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 
   <div class="row">
 

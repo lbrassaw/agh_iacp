@@ -73,6 +73,9 @@
  * @ingroup templates
  */
 ?>
+<!-- custom.js -->
+<script src="/sites/all/themes/iacpTheme/js/custom.js"></script>
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?> ">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header col-xs-12 col-md-3">
@@ -86,18 +89,18 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <!-- <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-      <?php endif; ?>
+      <?php endif; ?> -->
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse">
+      <div class="navbar-collapse" id="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>

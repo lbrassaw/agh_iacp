@@ -59,13 +59,22 @@ h5, .h5 {
 	margin-top: 31px;
 	margin-bottom: 0px;
 }
-p, ul, ol, pre, table, blockquote {
+p, ul, ol, pre, table {
   margin-top: 0px;
   margin-bottom: 31px;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+blockquote {
+    padding: 10px 20px !important;
+    margin: 0 0 32px !important;
+    font-size: 30px !important;
+    border-left: 0 none !important;
+    line-height: 36px;
+    font-family: 'Roboto Slab';
+    color: $theme-gold;
 }
 
 /* Let's make sure all's aligned */

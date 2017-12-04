@@ -93,6 +93,10 @@ a.name {
 	position: absolute !important;
 	right: 0;
 }
+#block-superfish-1 {
+    width: inherit;
+    float: right;
+}
 
 // Pre main content
 .not-front {
@@ -163,27 +167,54 @@ a.name {
     left: -50px;
     z-index: -1;
     background: url('./images/slider-line.svg') 0 50% no-repeat;
-    animation: lineMoves 2s ease 1;
-    animation-fill-mode: forwards;
 }
 
-@keyframes lineMoves {
-	0% {
-		opacity: 0;
-		background-width: 0;
-		background-height: 0;
+// Page styles
+.sidebar-documents {
+    background-color: #f6f6f6;
+    margin: 20px 0;
+    padding: 10px 20px 20px;
+    h2 {
+    	font-size: 32px;
+    	margin-top: 0 !important;
+    	margin-bottom: 16px !important;
+    }
+    .related-documents-item {
+    	font-family: 'Roboto Slab';
+    }
+    .related-documents-item-title {
+    	margin-bottom: 5px;
+    }
+    .application\/pdf,
+    .application\/msword,
+    .pptx {
+		padding-left: 50px;
+		display: block;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		line-height: 1.2;
 	}
-	50% {
-		opacity: 1;
+	.application\/pdf {
+		background: url('images/pdf.svg') 0 25% no-repeat;
+		background-size: 30px 40px;
 	}
-	90% {
-		background-height: 100%;
-		background-width: 0;
+	.application\/msword {
+		background: url('images/doc.svg') 0 25% no-repeat;
+		background-size: 30px 40px;
 	}
-	100% {
-		background-width: 100%;
+	.pptx {
+		background: url('images/ppt.svg') 0 25% no-repeat;
+		background-size: 30px 40px;
+	}
+	.mp3 {
+		background: url('images/ppt.svg') 0 25% no-repeat;
+		background-size: 30px 40px;
+	}
+	.related-document-item:hover {
+		text-decoration: none !important;
 	}
 }
+
 
 
 // Footer
@@ -229,14 +260,15 @@ a.name {
 @media (min-width: $screen-sm-min) { 
 	#superfish-1 {
 		margin-top: 8px;
-		font-size: 15px;
+		font-size: 18px;
 	}
 	#block-superfish-1 {
-		width: 54% !important;
+		width: inherit;
+		float: right;
 	}
 	.sf-menu li {
 		background-color: white;
-		padding: 10px 10px 15px;
+		padding: 7px 10px 15px;
 		a {
 			color: #333 !important;
 		}
@@ -245,7 +277,7 @@ a.name {
 		}
 	}
 	li.sf-depth-1 {
-		margin-left: 45px !important;
+		margin-left: 20px !important;
 	}
 	li.sf-depth-2:first-child {
 		margin-top: 10px;
@@ -254,8 +286,40 @@ a.name {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-
+	#superfish-1 {
+		margin-top: 8px;
+		font-size: 18px;
+	}
+	#block-superfish-1 {
+		width: 54% !important;
+		float: left;
+	}
+	.sf-menu li {
+		background-color: white;
+		padding: 7px 9px 15px;
+		a {
+			color: #333 !important;
+		}
+		a:hover {
+			text-decoration: none !important;
+		}
+	}
+	li.sf-depth-1 {
+		margin-left: 0 !important;
+	}
+	li.sf-depth-2:first-child {
+		margin-top: 10px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { }
+@media (min-width: $screen-lg-min) {
+
+	li.sf-depth-1 {
+		margin-left: 25px !important;
+	}
+	li.sf-depth-2:first-child {
+		margin-top: 10px;
+	}
+
+}

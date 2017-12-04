@@ -6519,13 +6519,22 @@ h5, .h5 {
   margin-top: 31px;
   margin-bottom: 0px; }
 
-p, ul, ol, pre, table, blockquote {
+p, ul, ol, pre, table {
   margin-top: 0px;
   margin-bottom: 31px; }
 
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0px;
   margin-bottom: 0px; }
+
+blockquote {
+  padding: 10px 20px !important;
+  margin: 0 0 32px !important;
+  font-size: 30px !important;
+  border-left: 0 none !important;
+  line-height: 36px;
+  font-family: 'Roboto Slab';
+  color: #B1790B; }
 
 /* Let's make sure all's aligned */
 hr, .hr {
@@ -6628,6 +6637,10 @@ a.name {
   position: absolute !important;
   right: 0; }
 
+#block-superfish-1 {
+  width: inherit;
+  float: right; }
+
 .not-front .div-line {
   width: 100%;
   height: 50px;
@@ -6679,22 +6692,43 @@ a.name {
   top: 0;
   left: -50px;
   z-index: -1;
-  background: url("./images/slider-line.svg") 0 50% no-repeat;
-  animation: lineMoves 2s ease 1;
-  animation-fill-mode: forwards; }
+  background: url("./images/slider-line.svg") 0 50% no-repeat; }
 
-@keyframes lineMoves {
-  0% {
-    opacity: 0;
-    background-width: 0;
-    background-height: 0; }
-  50% {
-    opacity: 1; }
-  90% {
-    background-height: 100%;
-    background-width: 0; }
-  100% {
-    background-width: 100%; } }
+.sidebar-documents {
+  background-color: #f6f6f6;
+  margin: 20px 0;
+  padding: 10px 20px 20px; }
+  .sidebar-documents h2 {
+    font-size: 32px;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important; }
+  .sidebar-documents .related-documents-item {
+    font-family: 'Roboto Slab'; }
+  .sidebar-documents .related-documents-item-title {
+    margin-bottom: 5px; }
+  .sidebar-documents .application\/pdf,
+  .sidebar-documents .application\/msword,
+  .sidebar-documents .pptx {
+    padding-left: 50px;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2; }
+  .sidebar-documents .application\/pdf {
+    background: url("images/pdf.svg") 0 25% no-repeat;
+    background-size: 30px 40px; }
+  .sidebar-documents .application\/msword {
+    background: url("images/doc.svg") 0 25% no-repeat;
+    background-size: 30px 40px; }
+  .sidebar-documents .pptx {
+    background: url("images/ppt.svg") 0 25% no-repeat;
+    background-size: 30px 40px; }
+  .sidebar-documents .mp3 {
+    background: url("images/ppt.svg") 0 25% no-repeat;
+    background-size: 30px 40px; }
+  .sidebar-documents .related-document-item:hover {
+    text-decoration: none !important; }
+
 .footer {
   border: 0 none !important;
   background-color: #214C6E;
@@ -6728,26 +6762,55 @@ a.name {
 @media (min-width: 768px) {
   #superfish-1 {
     margin-top: 8px;
-    font-size: 15px; }
+    font-size: 18px; }
 
   #block-superfish-1 {
-    width: 54% !important; }
+    width: inherit;
+    float: right; }
 
   .sf-menu li {
     background-color: white;
-    padding: 10px 10px 15px; }
+    padding: 7px 10px 15px; }
     .sf-menu li a {
       color: #333 !important; }
     .sf-menu li a:hover {
       text-decoration: none !important; }
 
   li.sf-depth-1 {
-    margin-left: 45px !important; }
+    margin-left: 20px !important; }
 
   li.sf-depth-2:first-child {
     margin-top: 10px; } }
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #superfish-1 {
+    margin-top: 8px;
+    font-size: 18px; }
+
+  #block-superfish-1 {
+    width: 54% !important;
+    float: left; }
+
+  .sf-menu li {
+    background-color: white;
+    padding: 7px 9px 15px; }
+    .sf-menu li a {
+      color: #333 !important; }
+    .sf-menu li a:hover {
+      text-decoration: none !important; }
+
+  li.sf-depth-1 {
+    margin-left: 0 !important; }
+
+  li.sf-depth-2:first-child {
+    margin-top: 10px; } }
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  li.sf-depth-1 {
+    margin-left: 25px !important; }
+
+  li.sf-depth-2:first-child {
+    margin-top: 10px; } }
 .flexslider .slides img {
   width: 650px;
   max-width: 100%;

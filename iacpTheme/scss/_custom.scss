@@ -39,7 +39,7 @@ a.name {
 }
 .btn-filled:hover {
 	background-color: white;
-	color: $theme-gold;
+	color: $theme-gold !important;
 }
 .btn-not-filled,
 #drop-down-login-wrapper a {
@@ -48,7 +48,7 @@ a.name {
 }
 .btn-not-filled:hover {
 	background-color: $theme-gold;
-	color: white;
+	color: white !important;
 }
 #block-block-2,
 #block-drop-down-login-drop-down-login {
@@ -185,8 +185,8 @@ a.name {
     .related-documents-item-title {
     	margin-bottom: 5px;
     }
-    .application\/pdf,
-    .application\/msword,
+    .pdf,
+    .doc,
     .pptx {
 		padding-left: 50px;
 		display: block;
@@ -194,11 +194,11 @@ a.name {
 		margin-bottom: 20px;
 		line-height: 1.2;
 	}
-	.application\/pdf {
+	.pdf {
 		background: url('images/pdf.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
-	.application\/msword {
+	.doc {
 		background: url('images/doc.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
@@ -213,6 +213,53 @@ a.name {
 	.related-document-item:hover {
 		text-decoration: none !important;
 	}
+}
+
+// Library
+.library-item {
+    background-color: #f6f6f6;
+    margin: 10px 0;
+    padding: 10px 20px 20px;
+    h2 {
+    	font-size: 32px;
+    	margin-top: 0 !important;
+    	margin-bottom: 16px !important;
+    }
+    h3 {
+    	margin-top: 16px !important;
+    }
+    .pdf,
+    .doc,
+    .pptx {
+    	display: block;
+    	float: left;
+    	width: 100px;
+    	height: 100px;
+		margin: 20px;
+		text-indent: -10000px;
+	}
+	.pdf {
+		background: url('images/pdf.svg') 0 0 no-repeat;
+		background-size: 90px 90px;
+	}
+	.doc {
+		background: url('images/doc.svg') 0 0 no-repeat;
+		background-size: 90px 90px;
+	}
+	.pptx {
+		background: url('images/ppt.svg') 0 0 no-repeat;
+		background-size: 90px 90px;
+	}
+	.mp3 {
+		background: url('images/ppt.svg') 0 0 no-repeat;
+		background-size: 90px 90px;
+	}
+	.related-document-item:hover {
+		text-decoration: none !important;
+	}
+}
+#block-views-exp-clone-of-library-page h2 {
+	font-size: 61px !important;
 }
 
 
@@ -305,7 +352,7 @@ a.name {
 		}
 	}
 	li.sf-depth-1 {
-		margin-left: 0 !important;
+		margin-left: 38px !important;
 	}
 	li.sf-depth-2:first-child {
 		margin-top: 10px;
@@ -316,7 +363,7 @@ a.name {
 @media (min-width: $screen-lg-min) {
 
 	li.sf-depth-1 {
-		margin-left: 25px !important;
+		margin-left: 65px !important;
 	}
 	li.sf-depth-2:first-child {
 		margin-top: 10px;

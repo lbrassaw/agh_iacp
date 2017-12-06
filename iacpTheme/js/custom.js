@@ -12,6 +12,9 @@
           $(".drop-down-login-container .login").removeClass("button");
           $(".logged-in .drop-down-login-container .login").html("Account");       
 
+          // $(".view-library .view-filters").prependTo(".view-library");
+          $(".view-clone-of-library .view-filters").prependTo(".view-clone-of-library");
+
           // Line element on slider
           // var elementOffsetOnStart = $('.flex-active-slide #slider-btn').offset().top;
           //      $('.slider-line').css('height', elementOffsetOnStart - 142);

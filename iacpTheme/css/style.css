@@ -6588,7 +6588,7 @@ a.name {
 
 .btn-filled:hover {
   background-color: white;
-  color: #B1790B; }
+  color: #B1790B !important; }
 
 .btn-not-filled,
 #drop-down-login-wrapper a {
@@ -6597,7 +6597,7 @@ a.name {
 
 .btn-not-filled:hover {
   background-color: #B1790B;
-  color: white; }
+  color: white !important; }
 
 #block-block-2,
 #block-drop-down-login-drop-down-login {
@@ -6706,18 +6706,18 @@ a.name {
     font-family: 'Roboto Slab'; }
   .sidebar-documents .related-documents-item-title {
     margin-bottom: 5px; }
-  .sidebar-documents .application\/pdf,
-  .sidebar-documents .application\/msword,
+  .sidebar-documents .pdf,
+  .sidebar-documents .doc,
   .sidebar-documents .pptx {
     padding-left: 50px;
     display: block;
     margin-left: 10px;
     margin-bottom: 20px;
     line-height: 1.2; }
-  .sidebar-documents .application\/pdf {
+  .sidebar-documents .pdf {
     background: url("images/pdf.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
-  .sidebar-documents .application\/msword {
+  .sidebar-documents .doc {
     background: url("images/doc.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
   .sidebar-documents .pptx {
@@ -6728,6 +6728,43 @@ a.name {
     background-size: 30px 40px; }
   .sidebar-documents .related-document-item:hover {
     text-decoration: none !important; }
+
+.library-item {
+  background-color: #f6f6f6;
+  margin: 10px 0;
+  padding: 10px 20px 20px; }
+  .library-item h2 {
+    font-size: 32px;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important; }
+  .library-item h3 {
+    margin-top: 16px !important; }
+  .library-item .pdf,
+  .library-item .doc,
+  .library-item .pptx {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-indent: -10000px; }
+  .library-item .pdf {
+    background: url("images/pdf.svg") 0 0 no-repeat;
+    background-size: 90px 90px; }
+  .library-item .doc {
+    background: url("images/doc.svg") 0 0 no-repeat;
+    background-size: 90px 90px; }
+  .library-item .pptx {
+    background: url("images/ppt.svg") 0 0 no-repeat;
+    background-size: 90px 90px; }
+  .library-item .mp3 {
+    background: url("images/ppt.svg") 0 0 no-repeat;
+    background-size: 90px 90px; }
+  .library-item .related-document-item:hover {
+    text-decoration: none !important; }
+
+#block-views-exp-clone-of-library-page h2 {
+  font-size: 61px !important; }
 
 .footer {
   border: 0 none !important;
@@ -6800,14 +6837,14 @@ a.name {
       text-decoration: none !important; }
 
   li.sf-depth-1 {
-    margin-left: 0 !important; }
+    margin-left: 38px !important; }
 
   li.sf-depth-2:first-child {
     margin-top: 10px; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   li.sf-depth-1 {
-    margin-left: 25px !important; }
+    margin-left: 65px !important; }
 
   li.sf-depth-2:first-child {
     margin-top: 10px; } }

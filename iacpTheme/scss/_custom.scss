@@ -9,6 +9,22 @@ a {
 a:hover {
 	color: $theme-gold;
 }
+div#toolbar div.toolbar-shortcuts ul {
+	height: 34px;
+}
+td, th {
+	padding: 0.5rem;
+}
+th {
+	white-space: nowrap;
+}
+.node h3 {
+	margin-bottom: 0.5rem;
+}
+.draggable a.tabledrag-handle {
+	height: 22px;
+	padding: 0.25rem 0;
+}
 
 // Menu
 .navbar-collapse {
@@ -187,7 +203,8 @@ a.name {
     }
     .pdf,
     .doc,
-    .pptx {
+    .pptx,
+    .mp3 {
 		padding-left: 50px;
 		display: block;
 		margin-left: 10px;
@@ -207,7 +224,7 @@ a.name {
 		background-size: 30px 40px;
 	}
 	.mp3 {
-		background: url('images/ppt.svg') 0 25% no-repeat;
+		background: url('images/mp3.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
 	.related-document-item:hover {
@@ -230,7 +247,8 @@ a.name {
     }
     .pdf,
     .doc,
-    .pptx {
+    .pptx,
+    .mp3 {
     	display: block;
     	float: left;
     	width: 100px;
@@ -251,17 +269,147 @@ a.name {
 		background-size: 90px 90px;
 	}
 	.mp3 {
-		background: url('images/ppt.svg') 0 0 no-repeat;
+		background: url('images/mp3.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
+	}
+	audio {
+		vertical-align: bottom !important;
 	}
 	.related-document-item:hover {
 		text-decoration: none !important;
+	}
+	.render-preview {
+		float: left;
+		margin-right: 15px;
+		margin-top: 10px;
+	}
+	.library-item-download {
+		margin-top: 10px;
+	}
+	span.file {
+		display: none;
 	}
 }
 #block-views-exp-clone-of-library-page h2 {
 	font-size: 61px !important;
 }
+.page-library {
+	#edit-resources-wrapper,
+	#edit-field-title-value-wrapper,
+	#edit-type-wrapper {
+		width: 40%;
+	}
+	#edit-type-wrapper {
+		margin-top: 40px;
+	}
+	#edit-type-wrapper label {
+		float: left;
+		margin-right: 20px;
+		font-weight: 600;
+	}
+	#edit-type-wrapper input {
+		float: left;
+		margin: 8px 8px 0 8px;
+	}
+	select,
+	#edit-field-title-value {
+		width: 100%;
+		clear: left;
+		float: left;
+		height: 40px;
+		margin-bottom: 10px;
+		border-radius: 0px !important;
+	}
+	select.drilldown-1 {
+		background-color: $theme-blue;
+		color: white;
+		border: 0 none !important;
+	}
+	select.drilldown-2 {
+		background-color: white;
+		color: $theme-blue;
+		border-color: $theme-blue;
+	}
+}
 
+// FAQs
+
+.view-cp-group-faqs {
+	.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+		display: none;
+	}
+	.ui-accordion .ui-accordion-header {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		min-height: 0; /* support: IE7 */
+	}
+	.ui-accordion .ui-accordion-icons {
+		padding-left: 0 !important;
+	}
+	.ui-accordion .ui-accordion-noicons {
+		padding-left: .7rem !important;
+	}
+	.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+		padding-left: 0 !important;
+	}
+	.ui-accordion .ui-accordion-content {
+		padding: 1rem 2.2rem !important;
+		border-top: 0;
+		overflow: auto;
+	}
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+		border: 0 none !important;
+		background: white !important;
+		color: #333 !important;
+	}
+	.ui-state-default a,
+	.ui-state-default a:link,
+	.ui-state-default a:visited {
+		color: #333 !important;
+	}
+	.ui-state-hover,
+	.ui-widget-content .ui-state-hover,
+	.ui-widget-header .ui-state-hover,
+	.ui-state-focus,
+	.ui-widget-content .ui-state-focus,
+	.ui-widget-header .ui-state-focus {
+		border: 0 none !important;
+		background: transparent !important;
+		color: #333 !important;
+	}
+	.ui-state-hover a,
+	.ui-state-hover a:hover,
+	.ui-state-hover a:link,
+	.ui-state-hover a:visited {
+		color: #333 !important;
+	}
+	.ui-state-active,
+	.ui-widget-content .ui-state-active,
+	.ui-widget-header .ui-state-active {
+		border: 0 none !important;
+		background: transparent !important;
+		color: #333 !important;
+	}
+	.ui-state-active a,
+	.ui-state-active a:link,
+	.ui-state-active a:visited {
+		color: #333 !important;
+	}
+	.ui-widget-content {
+		border: 0 none !important;
+		background: transparent !important;
+		color: #333 !important;
+		font-size: 15px !important;
+	}
+	.ui-widget-content a {
+		color: $theme-gold !important;
+	}
+}
 
 
 // Footer

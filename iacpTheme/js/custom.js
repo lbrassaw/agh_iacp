@@ -8,12 +8,20 @@
 (function($){
 
      $(document).ready(function() {
+
           $(".drop-down-login-container .login").addClass("btn custom-btn btn-not-filled");
           $(".drop-down-login-container .login").removeClass("button");
-          $(".logged-in .drop-down-login-container .login").html("Account");       
 
-          // $(".view-library .view-filters").prependTo(".view-library");
-          $(".view-clone-of-library .view-filters").prependTo(".view-clone-of-library");
+          // Remove download functionality from audio player
+          $(".library-item audio").attr("controlslist", "nodownload");
+
+          var $titleValue = $('#edit-field-title-value-wrapper label')
+               .html();
+               console.log($titleValue);
+          $('#edit-field-title-value-wrapper input')
+               .text($titleValue);
+
+
 
           // Line element on slider
           // var elementOffsetOnStart = $('.flex-active-slide #slider-btn').offset().top;
@@ -29,6 +37,10 @@
           //      $('.slider-line').css('width', '100');
           // }
      });
+
+     $(document).ajaxComplete(function(event, req, settings) {
+          $(".library-item audio").attr("controlslist", "nodownload");
+     })
 
 
      // Drupal.behaviors.custom_flexslider_behavior = {

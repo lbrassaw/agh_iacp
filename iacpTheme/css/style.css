@@ -16,7 +16,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab|Roboto:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab|Roboto:300,400,400i,600");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6478,7 +6478,8 @@ body, .article {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 31px;
-  margin: auto; }
+  margin: auto;
+  font-weight: 400; }
 
 h1, .h1 {
   font-family: 'Roboto', sans-serif;
@@ -6559,6 +6560,22 @@ a {
 
 a:hover {
   color: #B1790B; }
+
+div#toolbar div.toolbar-shortcuts ul {
+  height: 34px; }
+
+td, th {
+  padding: 0.5rem; }
+
+th {
+  white-space: nowrap; }
+
+.node h3 {
+  margin-bottom: 0.5rem; }
+
+.draggable a.tabledrag-handle {
+  height: 22px;
+  padding: 0.25rem 0; }
 
 .navbar-collapse {
   padding-right: 0 !important; }
@@ -6708,7 +6725,8 @@ a.name {
     margin-bottom: 5px; }
   .sidebar-documents .pdf,
   .sidebar-documents .doc,
-  .sidebar-documents .pptx {
+  .sidebar-documents .pptx,
+  .sidebar-documents .mp3 {
     padding-left: 50px;
     display: block;
     margin-left: 10px;
@@ -6724,7 +6742,7 @@ a.name {
     background: url("images/ppt.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
   .sidebar-documents .mp3 {
-    background: url("images/ppt.svg") 0 25% no-repeat;
+    background: url("images/mp3.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
   .sidebar-documents .related-document-item:hover {
     text-decoration: none !important; }
@@ -6741,7 +6759,8 @@ a.name {
     margin-top: 16px !important; }
   .library-item .pdf,
   .library-item .doc,
-  .library-item .pptx {
+  .library-item .pptx,
+  .library-item .mp3 {
     display: block;
     float: left;
     width: 100px;
@@ -6758,13 +6777,115 @@ a.name {
     background: url("images/ppt.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
   .library-item .mp3 {
-    background: url("images/ppt.svg") 0 0 no-repeat;
+    background: url("images/mp3.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
+  .library-item audio {
+    vertical-align: bottom !important; }
   .library-item .related-document-item:hover {
     text-decoration: none !important; }
+  .library-item .render-preview {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px; }
+  .library-item .library-item-download {
+    margin-top: 10px; }
+  .library-item span.file {
+    display: none; }
 
 #block-views-exp-clone-of-library-page h2 {
   font-size: 61px !important; }
+
+.page-library #edit-resources-wrapper,
+.page-library #edit-field-title-value-wrapper,
+.page-library #edit-type-wrapper {
+  width: 40%; }
+.page-library #edit-type-wrapper {
+  margin-top: 40px; }
+.page-library #edit-type-wrapper label {
+  float: left;
+  margin-right: 20px;
+  font-weight: 600; }
+.page-library #edit-type-wrapper input {
+  float: left;
+  margin: 8px 8px 0 8px; }
+.page-library select,
+.page-library #edit-field-title-value {
+  width: 100%;
+  clear: left;
+  float: left;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 0px !important; }
+.page-library select.drilldown-1 {
+  background-color: #214C6E;
+  color: white;
+  border: 0 none !important; }
+.page-library select.drilldown-2 {
+  background-color: white;
+  color: #214C6E;
+  border-color: #214C6E; }
+
+.view-cp-group-faqs .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none; }
+.view-cp-group-faqs .ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  min-height: 0;
+  /* support: IE7 */ }
+.view-cp-group-faqs .ui-accordion .ui-accordion-icons {
+  padding-left: 0 !important; }
+.view-cp-group-faqs .ui-accordion .ui-accordion-noicons {
+  padding-left: .7rem !important; }
+.view-cp-group-faqs .ui-accordion .ui-accordion-icons .ui-accordion-icons {
+  padding-left: 0 !important; }
+.view-cp-group-faqs .ui-accordion .ui-accordion-content {
+  padding: 1rem 2.2rem !important;
+  border-top: 0;
+  overflow: auto; }
+.view-cp-group-faqs .ui-state-default,
+.view-cp-group-faqs .ui-widget-content .ui-state-default,
+.view-cp-group-faqs .ui-widget-header .ui-state-default {
+  border: 0 none !important;
+  background: white !important;
+  color: #333 !important; }
+.view-cp-group-faqs .ui-state-default a,
+.view-cp-group-faqs .ui-state-default a:link,
+.view-cp-group-faqs .ui-state-default a:visited {
+  color: #333 !important; }
+.view-cp-group-faqs .ui-state-hover,
+.view-cp-group-faqs .ui-widget-content .ui-state-hover,
+.view-cp-group-faqs .ui-widget-header .ui-state-hover,
+.view-cp-group-faqs .ui-state-focus,
+.view-cp-group-faqs .ui-widget-content .ui-state-focus,
+.view-cp-group-faqs .ui-widget-header .ui-state-focus {
+  border: 0 none !important;
+  background: transparent !important;
+  color: #333 !important; }
+.view-cp-group-faqs .ui-state-hover a,
+.view-cp-group-faqs .ui-state-hover a:hover,
+.view-cp-group-faqs .ui-state-hover a:link,
+.view-cp-group-faqs .ui-state-hover a:visited {
+  color: #333 !important; }
+.view-cp-group-faqs .ui-state-active,
+.view-cp-group-faqs .ui-widget-content .ui-state-active,
+.view-cp-group-faqs .ui-widget-header .ui-state-active {
+  border: 0 none !important;
+  background: transparent !important;
+  color: #333 !important; }
+.view-cp-group-faqs .ui-state-active a,
+.view-cp-group-faqs .ui-state-active a:link,
+.view-cp-group-faqs .ui-state-active a:visited {
+  color: #333 !important; }
+.view-cp-group-faqs .ui-widget-content {
+  border: 0 none !important;
+  background: transparent !important;
+  color: #333 !important;
+  font-size: 15px !important; }
+.view-cp-group-faqs .ui-widget-content a {
+  color: #B1790B !important; }
 
 .footer {
   border: 0 none !important;

@@ -302,7 +302,8 @@ a.name {
     	margin-bottom: 5px;
     }
     .pdf,
-    .doc, .docx,
+    .doc,
+    .docx,
     .pptx,
     .mp3 {
 		padding-left: 50px;
@@ -353,6 +354,7 @@ a.name {
     }
     .pdf,
     .doc,
+    .docx,
     .pptx,
     .mp3 {
     	display: block;
@@ -366,7 +368,8 @@ a.name {
 		background: url('images/pdf.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
 	}
-	.doc {
+	.doc,
+	.docx {
 		background: url('images/doc.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
 	}

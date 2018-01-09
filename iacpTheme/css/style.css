@@ -10042,7 +10042,8 @@ a.name {
   .sidebar-documents .related-documents-item-title {
     margin-bottom: 5px; }
   .sidebar-documents .pdf,
-  .sidebar-documents .doc, .sidebar-documents .docx,
+  .sidebar-documents .doc,
+  .sidebar-documents .docx,
   .sidebar-documents .pptx,
   .sidebar-documents .mp3 {
     padding-left: 50px;
@@ -10081,6 +10082,7 @@ a.name {
     margin-top: 16px !important; }
   .library-item .pdf,
   .library-item .doc,
+  .library-item .docx,
   .library-item .pptx,
   .library-item .mp3 {
     display: block;
@@ -10092,7 +10094,8 @@ a.name {
   .library-item .pdf {
     background: url("images/pdf.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
-  .library-item .doc {
+  .library-item .doc,
+  .library-item .docx {
     background: url("images/doc.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
   .library-item .pptx {

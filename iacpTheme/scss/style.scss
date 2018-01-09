@@ -10,8 +10,13 @@
 // Fonts import.
 @import 'fonts';
 
+// Civi overrides
+@import 'civi-overrides';
+
 // Custom styles
 @import 'custom';
 
 // Flexslider overrights
 @import 'overrides-flexslider';
+
+@import 'ionicons';

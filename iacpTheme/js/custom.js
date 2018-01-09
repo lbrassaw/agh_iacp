@@ -9,35 +9,53 @@
 
      $(document).ready(function() {
 
+          // Add classes to login dropdown buttons
           $(".drop-down-login-container .login").addClass("btn custom-btn btn-not-filled");
           $(".drop-down-login-container .login").removeClass("button");
+
+          // Hide Join button if logged in
+          if ($('body').hasClass('logged-in')) {
+               $('#join-donate').hide();
+          }
+
 
           // Remove download functionality from audio player
           $(".library-item audio").attr("controlslist", "nodownload");
 
-          var $titleValue = $('#edit-field-title-value-wrapper label')
-               .html();
-               console.log($titleValue);
-          $('#edit-field-title-value-wrapper input')
-               .text($titleValue);
+          // Get value form search label and hide
+          var $titleValue = $('#edit-field-title-value-wrapper label').text();
+          $('#edit-field-title-value-wrapper label').hide();
+          // Set value of label to input text
+          $('#edit-field-title-value').attr('placeholder', $.trim($titleValue));
 
+          // Edit resource page apply and submit buttons
+          $('.page-resources #edit-submit-clone-of-library').removeClass('btn btn-info');
+          $('.page-resources #edit-submit-clone-of-library').addClass('custom-btn');
+          $('.page-resources #edit-reset').removeClass('btn btn-default');
+          $('.page-resources #edit-reset').addClass('custom-btn btn-not-filled');
 
+          // Hide default breadcrumb on members pages where Easy Breadcrumb is used
+          $('.page-members- ol.breadcrumb').hide();
+          $('.page-resources ol.breadcrumb').hide();
 
-          // Line element on slider
-          // var elementOffsetOnStart = $('.flex-active-slide #slider-btn').offset().top;
-          //      $('.slider-line').css('height', elementOffsetOnStart - 142);
-          //      $('.slider-line').css('width', '100');
+          // Clone view header title to breadcrumb
+          $('.page-members- span.easy-breadcrumb_segment-title').text('');
+          var $pageMemberTitle = $('.page-members- .page-header p').text();
+          $('.page-members- span.easy-breadcrumb_segment-title').text($pageMemberTitle);
 
-          // Set Interval to check change of line element on slider
-          // var slideLine = setInterval(slideLineTimer, 7000);
+          // Set meta title for member name page
+          if ($('body').hasClass('page-members-')) {
+               $('title').text($pageMemberTitle + ' | IACP');    
+          }
+          // Set meta title for resources page
+          var $pageResourcesTitle = $('.page-resources #block-views-exp-clone-of-library-page .block-title').text();
+          if ($('body').hasClass('page-resources')) {
+               $('title').text($pageResourcesTitle + ' | IACP');     
+          }
 
-          // function slideLineTimer() {
-          //      var elementOffset = $('.flex-active-slide #slider-btn').offset().top;
-          //      $('.slider-line').css('height', elementOffset - 142);
-          //      $('.slider-line').css('width', '100');
-          // }
      });
 
+     // Hide download link from audio files in resources
      $(document).ajaxComplete(function(event, req, settings) {
           $(".library-item audio").attr("controlslist", "nodownload");
      })

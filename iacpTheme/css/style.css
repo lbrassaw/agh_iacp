@@ -10027,7 +10027,9 @@ a.name {
 .front .main-container {
   margin-top: 5vh; }
   .front .main-container .page-header {
-    display: none; }
+    font-size: 41px; }
+.front #flexslider-1 .custom-btn {
+  margin-left: 15px !important; }
 
 .sidebar-documents {
   background-color: #f6f6f6;
@@ -10449,7 +10451,7 @@ a.name {
     border: 1px solid #B1790B;
     border-radius: 4px;
     padding: 6px 20px;
-    margin: 7px 0 0 7px;
+    margin: 7px 7px 0 0;
     background-color: #B1790B;
     color: white; }
 

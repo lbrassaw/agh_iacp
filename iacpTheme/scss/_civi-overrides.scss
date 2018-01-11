@@ -312,7 +312,7 @@ input.crm-form-entityref {
   padding: 4px 0;
   margin: 10px 15px 0 0;
   border: none;
-  border-top: 1px solid #CFCEC3;
+  border-top: 0 none;
 }
 
 .crm-container fieldset.no-border {
@@ -321,17 +321,18 @@ input.crm-form-entityref {
 
 .crm-container fieldset legend {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
   font-weight: bold;
-  padding: 4px;
+  padding: 6px 0;
   background: none;
-  border: medium none;
+  border: 0 none;
+  border-bottom: 1px solid #ccc;
   background-color: transparent;
   color: #3E3E3E;
   position: relative;
   text-indent: 0;
-  width: auto;
+  width: 100%;
 }
 
 .crm-container fieldset.form-layout {
@@ -1754,12 +1755,12 @@ input.crm-form-entityref {
 }
 
 #crm-container table.view-layout .label {
-  color: DimGray;
+  color: #333;
   font-size: inherit;
   vertical-align: top;
   font-weight: bold;
   margin-right: 10px;
-  background-color: #EEEEEE;
+  background-color: #fff;
   width: 20%;
 }
 
@@ -2453,7 +2454,7 @@ div.crm-master-accordion-header a.helpicon {
   text-align: left;
   width: 40%;
   font-size: inherit;
-  color: #A7A7A7;
+  color: #333;
   background-color: transparent;
 }
 
@@ -2816,7 +2817,7 @@ tbody.scrollContent tr.alternateRow {
 }
 
 .crm-container table.crm-info-panel .label {
-  color: #2f2f2f;
+  color: #333;
   font-weight: normal;
 }
 
@@ -2846,10 +2847,10 @@ tbody.scrollContent tr.alternateRow {
 .crm-container div.contact_panel td.label,
 .crm-container #customFields div.contact_panel td.label,
 .crm-container table.crm-info-panel td.label {
-  background-color: #fafafa;
+  background-color: #fff;
   width: 120px;
   text-align: left;
-  color: #7a7a60;
+  color: #333;
 }
 .crm-container table.crm-info-panel td.label {
   width: 150px;
@@ -2859,20 +2860,20 @@ tbody.scrollContent tr.alternateRow {
 .crm-container .form-layout-compressed td.label {
   width: 150px;
   text-align: right;
-  color: #7a7a60;
+  color: #333;
 }
 
 .crm-container .form-layout td.label,
 .crm-container form table.report .label,
 .crm-container form table label,
 .crm-container form table.report label {
-  color: #3e3e3e;
+  color: #333;
 }
 
 .crm-container a.crm-icon-picker-button {
   min-width: 10em;
   text-align: inherit;
-  color: #3e3e3e;
+  color: #333;
 }
 
 .crm-container a.crm-icon-picker-button .ui-button-text {
@@ -3579,6 +3580,7 @@ span.crm-status-icon {
 #crm-container.crm-public input[type="email"],
 #crm-container.crm-public select {
      font-size: 14px;
+     height: 34px;
      padding: 6px 12px;
      vertical-align: middle;
      max-width: 100%;
@@ -3586,6 +3588,7 @@ span.crm-status-icon {
      line-height: 1.42;
      border: 1px solid #ccc;
      border-radius: 4px;
+     box-sizing: border-box;
 }
 #crm-container.crm-public input[type="text"],
 #crm-container.crm-public input[type="password"],
@@ -3601,10 +3604,10 @@ span.crm-status-icon {
 
 .crm-container.crm-public .select2-container,
 .crm-container.crm-public .select2-results {
-  font-size: inherit;
+  font-size: 14px;
 }
 .crm-container.crm-public .select2-container .select2-choice {
-     padding: 10px 5px 35px;
+     padding: 5px 5px 30px;
 }
 .crm-container.crm-public .select2-container-multi .select2-choices {
   padding: 4px;
@@ -3614,7 +3617,7 @@ span.crm-status-icon {
 }
 .crm-public .select2-container .select2-choice .select2-arrow b {
   position: relative;
-  top: 20%;
+  top: 13%;
   left: 1px;
 }
 .crm-container.crm-public .select2-container-multi .select2-choices .select2-search-choice {
@@ -3765,7 +3768,7 @@ span.crm-status-icon {
 }
 
 #crm-container.crm-public .price-set-row .highlight label {
-  color: #000000;
+  color: #333;
   font-weight: bold;
   padding-left: 5px;
 }

@@ -6829,24 +6829,25 @@ input.crm-form-entityref {
   padding: 4px 0;
   margin: 10px 15px 0 0;
   border: none;
-  border-top: 1px solid #CFCEC3; }
+  border-top: 0 none; }
 
 .crm-container fieldset.no-border {
   border-top: none; }
 
 .crm-container fieldset legend {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
   font-weight: bold;
-  padding: 4px;
+  padding: 6px 0;
   background: none;
-  border: medium none;
+  border: 0 none;
+  border-bottom: 1px solid #ccc;
   background-color: transparent;
   color: #3E3E3E;
   position: relative;
   text-indent: 0;
-  width: auto; }
+  width: 100%; }
 
 .crm-container fieldset.form-layout {
   margin: .25em 0 .5em 0;
@@ -8031,12 +8032,12 @@ input.crm-form-entityref {
   border: 0 none; }
 
 #crm-container table.view-layout .label {
-  color: DimGray;
+  color: #333;
   font-size: inherit;
   vertical-align: top;
   font-weight: bold;
   margin-right: 10px;
-  background-color: #EEEEEE;
+  background-color: #fff;
   width: 20%; }
 
 #crm-container th.contriTotalRight {
@@ -8622,7 +8623,7 @@ div.crm-master-accordion-header a.helpicon {
   text-align: left;
   width: 40%;
   font-size: inherit;
-  color: #A7A7A7;
+  color: #333;
   background-color: transparent; }
 
 .crm-container .crm-summary-group .crm-section .content {
@@ -8925,7 +8926,7 @@ tbody.scrollContent tr.alternateRow {
   border-bottom: 1px solid #FFF; }
 
 .crm-container table.crm-info-panel .label {
-  color: #2f2f2f;
+  color: #333;
   font-weight: normal; }
 
 .crm-container .disabled,
@@ -8950,10 +8951,10 @@ tbody.scrollContent tr.alternateRow {
 .crm-container div.contact_panel td.label,
 .crm-container #customFields div.contact_panel td.label,
 .crm-container table.crm-info-panel td.label {
-  background-color: #fafafa;
+  background-color: #fff;
   width: 120px;
   text-align: left;
-  color: #7a7a60; }
+  color: #333; }
 
 .crm-container table.crm-info-panel td.label {
   width: 150px; }
@@ -8962,18 +8963,18 @@ tbody.scrollContent tr.alternateRow {
 .crm-container .form-layout-compressed td.label {
   width: 150px;
   text-align: right;
-  color: #7a7a60; }
+  color: #333; }
 
 .crm-container .form-layout td.label,
 .crm-container form table.report .label,
 .crm-container form table label,
 .crm-container form table.report label {
-  color: #3e3e3e; }
+  color: #333; }
 
 .crm-container a.crm-icon-picker-button {
   min-width: 10em;
   text-align: inherit;
-  color: #3e3e3e; }
+  color: #333; }
 
 .crm-container a.crm-icon-picker-button .ui-button-text {
   color: #9f9f9f; }
@@ -9569,13 +9570,15 @@ span.crm-status-icon {
 #crm-container.crm-public input[type="email"],
 #crm-container.crm-public select {
   font-size: 14px;
+  height: 34px;
   padding: 6px 12px;
   vertical-align: middle;
   max-width: 100%;
   margin-bottom: 0;
   line-height: 1.42;
   border: 1px solid #ccc;
-  border-radius: 4px; }
+  border-radius: 4px;
+  box-sizing: border-box; }
 
 #crm-container.crm-public input[type="text"],
 #crm-container.crm-public input[type="password"],
@@ -9589,10 +9592,10 @@ span.crm-status-icon {
 
 .crm-container.crm-public .select2-container,
 .crm-container.crm-public .select2-results {
-  font-size: inherit; }
+  font-size: 14px; }
 
 .crm-container.crm-public .select2-container .select2-choice {
-  padding: 10px 5px 35px; }
+  padding: 5px 5px 30px; }
 
 .crm-container.crm-public .select2-container-multi .select2-choices {
   padding: 4px; }
@@ -9602,7 +9605,7 @@ span.crm-status-icon {
 
 .crm-public .select2-container .select2-choice .select2-arrow b {
   position: relative;
-  top: 20%;
+  top: 13%;
   left: 1px; }
 
 .crm-container.crm-public .select2-container-multi .select2-choices .select2-search-choice {
@@ -9729,7 +9732,7 @@ span.crm-status-icon {
   font-weight: bold; }
 
 #crm-container.crm-public .price-set-row .highlight label {
-  color: #000000;
+  color: #333;
   font-weight: bold;
   padding-left: 5px; }
 
@@ -9846,7 +9849,7 @@ th {
 
 label,
 .label {
-  color: #214C6E;
+  color: #333;
   font-weight: normal; }
 
 .node h3 {
@@ -9867,7 +9870,7 @@ label,
   margin-bottom: 10px !important; }
 
 a.name {
-  background: url("../logo.png") 100% 35% no-repeat !important;
+  background: url("../logo.png") 50% 35% no-repeat !important;
   background-size: contain !important;
   display: block;
   width: 90%;
@@ -10028,6 +10031,10 @@ a.name {
   margin-top: 5vh; }
   .front .main-container .page-header {
     font-size: 41px; }
+  .front .main-container #block-block-3 {
+    padding-bottom: 1.5rem; }
+  .front .main-container section:nth-child(n+2) {
+    border-top: 1px solid #f6f6f6; }
 .front #flexslider-1 .custom-btn {
   margin-left: 15px !important; }
 
@@ -10068,6 +10075,26 @@ a.name {
     background-size: 30px 40px; }
   .sidebar-documents .related-document-item:hover {
     text-decoration: none !important; }
+
+.page-node-27 .sidebar-documents p {
+  position: relative;
+  margin-left: 20px; }
+  .page-node-27 .sidebar-documents p a {
+    font-family: 'Roboto Slab', sans-serif; }
+  .page-node-27 .sidebar-documents p a:before {
+    content: '\f1fe';
+    line-height: 0;
+    border-top: none;
+    border-left: none;
+    margin-top: 2px;
+    font-family: 'Ionicons';
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    opacity: 0.8; }
+  .page-node-27 .sidebar-documents p a:hover {
+    text-decoration: none; }
 
 #block-views-exp-clone-of-library-page .block-title {
   margin-top: 0 !important; }
@@ -10201,7 +10228,7 @@ a.name {
 .view-cp-group-faqs .ui-accordion .ui-accordion-icons .ui-accordion-icons {
   padding-left: 0 !important; }
 .view-cp-group-faqs .ui-accordion .ui-accordion-content {
-  padding: 1rem 2.2rem !important;
+  padding: 2rem 2.2rem 1rem !important;
   border-top: 0;
   overflow: auto; }
 .view-cp-group-faqs .ui-state-default,
@@ -10246,6 +10273,8 @@ a.name {
 .view-cp-group-faqs .ui-widget-content a {
   color: #B1790B !important; }
 
+.webform-client-form textarea {
+  resize: none; }
 .webform-client-form .panel {
   box-shadow: none;
   border: 0 none; }
@@ -10254,7 +10283,7 @@ a.name {
 .webform-client-form .panel-default > .panel-heading {
   background-color: transparent; }
 .webform-client-form .panel-heading {
-  padding: 10px 0; }
+  padding: 2rem 0 1rem; }
 .webform-client-form .panel-title {
   font-size: inherit;
   font-weight: bold; }
@@ -10267,6 +10296,71 @@ a.name {
     color: #B1790B; }
 .webform-client-form .form-control {
   box-shadow: none !important; }
+.webform-client-form .webform-layout-box > .form-item input {
+  max-width: 100%; }
+.webform-client-form .webform-layout-box.horiz > * + * {
+  margin-left: 0;
+  width: 100%; }
+.webform-client-form .webform-layout-box.horiz > *, .webform-client-form .webform-layout-box.equal > * {
+  width: 100%; }
+.webform-client-form .webform-component--civicrm-1-contact-1-fieldset-fieldset--main-office--phone-fax {
+  margin-top: 1rem; }
+
+.token-input-list {
+  height: 34px !important;
+  width: 100% !important;
+  border: 1px solid #ccc !important;
+  cursor: text;
+  font-size: 14px !important;
+  font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  padding: 4px 12px  !important;
+  line-height: 1.42;
+  background-color: #fff !important;
+  border-radius: 4px; }
+  .token-input-list li.token-input-token {
+    background-color: #fff !important;
+    color: #333 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 14px !important; }
+
+.token-input-selected-dropdown-item {
+  background-color: #214C6E !important;
+  color: white !important; }
+
+.token-input-dropdown {
+  font-family: 'Roboto', sans-serif; }
+  .token-input-dropdown li:hover {
+    background-color: #214C6E !important;
+    color: white !important; }
+
+#block-views-tweets-block {
+  position: relative; }
+  #block-views-tweets-block .block-title {
+    position: relative;
+    margin-left: 11%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; }
+  #block-views-tweets-block .block-title:before {
+    content: '\f243';
+    line-height: 0;
+    border-top: none;
+    border-left: none;
+    margin-top: -2px;
+    font-family: 'Ionicons';
+    font-size: 51px;
+    position: absolute;
+    top: 51%;
+    left: -12%;
+    opacity: 1;
+    color: #B1790B; }
+  #block-views-tweets-block .tweet-info {
+    margin: 30px 0 5px; }
+    #block-views-tweets-block .tweet-info .tweet-time {
+      font-weight: 700 !important;
+      font-style: normal !important; }
+    #block-views-tweets-block .tweet-info .tweet-info {
+      font-weight: 400 !important; }
 
 .footer {
   border: 0 none !important;
@@ -10291,18 +10385,12 @@ a.name {
     margin-right: 30px; }
     .footer .social :last-child {
       float: none; }
-  .footer .footer-facebook {
-    background: url("images/facebook.png") 0 0 no-repeat; }
-  .footer .footer-twitter {
-    background: url("images/twitter.png") 0 0 no-repeat; }
-  .footer .footer-linkedin {
-    background: url("images/linkedin.png") 0 0 no-repeat; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   a.name {
     width: 100%;
-    background: url("../logo.png") 50% 50% no-repeat !important;
+    background: url("../logo.png") 10px 50% no-repeat !important;
     background-size: contain !important;
     margin-left: 0; }
 
@@ -10497,8 +10585,16 @@ a.name {
     width: 50%;
     height: 12em; }
 
-  .node-webform {
-    width: 80%; } }
+  .node-webform,
+  .crm-public-form-item {
+    width: 80%; }
+
+  .webform-client-form .webform-layout-box > .form-item input {
+    max-width: 75%; }
+  .webform-client-form .form-control {
+    max-width: 75%; }
+  .webform-client-form .token-input-list {
+    width: 75% !important; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #block-superfish-1 #superfish-1 li.sf-depth-1 {
@@ -10506,8 +10602,16 @@ a.name {
   #block-superfish-1 #superfish-1 li.sf-depth-2:first-child {
     margin-top: 13px; }
 
-  .node-webform {
-    width: 60%; } }
+  .node-webform,
+  .crm-public-form-item {
+    width: 60%; }
+
+  .webform-client-form .webform-layout-box > .form-item input {
+    max-width: 60%; }
+  .webform-client-form .form-control {
+    max-width: 100%; }
+  .webform-client-form .token-input-list {
+    width: 80% !important; } }
 .flexslider .slides img {
   width: 650px;
   max-width: 100%;

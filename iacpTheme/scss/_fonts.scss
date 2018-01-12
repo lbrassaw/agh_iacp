@@ -11,69 +11,69 @@ font-family: 'Roboto Slab', serif;
 */
 
 html, .root {
-	font-size: 18px;
-	line-height: 31px;
+	font-size: 16px;
+	line-height: 27px;
 }
 body, .article {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	line-height: 31px;
+	font-size: 16px;
+	line-height: 27px;
 	margin: auto;
 	font-weight: 400;
 }
 h1, .h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 61px;
+	font-size: 41px;
 	font-weight: 600;
-	line-height: 62px;
-	margin-top: 31px;
-	margin-bottom: 62px;
+	line-height: 42px;
+	margin-top: 21px;
+	margin-bottom: 42px;
 }
 h2, .h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 41px;
+	font-size: 31px;
 	font-weight: 600;
-	line-height: 62px;
-	margin-top: 31px;
-	margin-bottom: 31px;
+	line-height: 32px;
+	margin-top: 21px;
+	margin-bottom: 21px;
 }
 h3, .h3 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 27px;
+	font-size: 24px;
 	font-weight: 600;
-	line-height: 31px;
-	margin-top: 31px;
+	line-height: 26px;
+	margin-top: 21px;
 	margin-bottom: 0px;
 }
 h4, .h4 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
-	line-height: 31px;
-	margin-top: 31px;
+	line-height: 27px;
+	margin-top: 21px;
 	margin-bottom: 0px;
 }
 h5, .h5 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	line-height: 31px;
-	margin-top: 31px;
+	font-size: 16px;
+	line-height: 27px;
+	margin-top: 21px;
 	margin-bottom: 0px;
 }
 p, ul, ol, pre, table {
   margin-top: 0px;
-  margin-bottom: 31px;
+  margin-bottom: 21px;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 blockquote {
-    padding: 10px 20px !important;
-    margin: 0 0 32px !important;
-    font-size: 30px !important;
+    padding: 5px 10px !important;
+    margin: 0 0 22px !important;
+    font-size: 20px !important;
     border-left: 0 none !important;
-    line-height: 36px;
+    line-height: 26px;
     font-family: 'Roboto Slab';
     color: $theme-gold;
 }
@@ -93,4 +93,91 @@ sup {
 }
 sub {
   bottom: -0.25em;
+}
+
+@media (min-width: $screen-sm-min) { 
+	html, .root {
+		font-size: 18px;
+		line-height: 31px;
+	}
+	body, .article {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		line-height: 31px;
+		margin: auto;
+		font-weight: 400;
+	}
+	h1, .h1 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 61px;
+		font-weight: 600;
+		line-height: 62px;
+		margin-top: 31px;
+		margin-bottom: 62px;
+	}
+	h2, .h2 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 41px;
+		font-weight: 600;
+		line-height: 42px;
+		margin-top: 31px;
+		margin-bottom: 31px;
+	}
+	h3, .h3 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 27px;
+		font-weight: 600;
+		line-height: 31px;
+		margin-top: 31px;
+		margin-bottom: 0px;
+	}
+	h4, .h4 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 31px;
+		margin-top: 31px;
+		margin-bottom: 0px;
+	}
+	h5, .h5 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		line-height: 31px;
+		margin-top: 31px;
+		margin-bottom: 0px;
+	}
+	p, ul, ol, pre, table {
+	  margin-top: 0px;
+	  margin-bottom: 31px;
+	}
+	ul ul, ol ol, ul ol, ol ul {
+	  margin-top: 0px;
+	  margin-bottom: 0px;
+	}
+	blockquote {
+	    padding: 10px 20px !important;
+	    margin: 0 0 32px !important;
+	    font-size: 30px !important;
+	    border-left: 0 none !important;
+	    line-height: 36px;
+	    font-family: 'Roboto Slab';
+	    color: $theme-gold;
+	}
+
+	/* Let's make sure all's aligned */
+	hr, .hr {
+	  border: 1px solid;
+	  margin: -1px 0;
+	}
+	sub, sup {
+	  line-height: 0;
+	  position: relative;
+	  vertical-align: baseline;
+	}
+	sup {
+	  top: -0.5em;
+	}
+	sub {
+	  bottom: -0.25em;
+	}
 }

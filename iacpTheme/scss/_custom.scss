@@ -51,10 +51,11 @@ a.name {
     text-indent: -10000px;
     margin-left: 15px;
 }
-.custom-btn {
+.custom-btn,
+.btn-info {
 	text-transform: uppercase;
 	font-size: 15px;
-	border: 1px solid $theme-gold;
+	border: 1px solid $theme-gold !important;
 	border-radius: 4px;
 	padding: 6px 10px;
 	margin: 7px 7px 0 0;
@@ -255,8 +256,12 @@ a.name {
 	// 	padding: 0 !important;
 	// }
 	#flexslider-1 {
+		p {
+			margin-bottom: 0;
+		}
 		.custom-btn {
-			margin-left: 15px !important;
+			margin-bottom: 10px;
+			// margin-left: 15px !important;
 		}
 			// h1 {
 			// 	margin-top: 0;
@@ -344,6 +349,12 @@ a.name {
 	.related-document-item:hover {
 		text-decoration: none !important;
 	}
+	.table-striped > tbody > tr:nth-of-type(odd) {
+		background-color: $theme-lightgrey !important;
+	}
+	.table-striped > tbody > tr:hover {
+		background-color: none !important;
+	}
 }
 .page-node-27 .sidebar-documents {
 	p {
@@ -361,14 +372,44 @@ a.name {
 			font-family: 'Ionicons';
 			font-size: 15px;
 			position: absolute;
-			top: 50%;
+			top: 45%;
 			left: -20px;
-			opacity: 0.8;
+			transform: rotate(-45deg);
 		}
 		a:hover {
 			text-decoration: none;
 		}
 	} 
+}
+
+// Events
+#event-legend {
+	span {
+		margin-bottom: 10px;
+	}
+}
+.dot-22,
+.dot-23,
+.dot-24,
+.dot-25 {
+	text-indent: -10000px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.dot-22 {
+	background-color: red;
+}
+.dot-23 {
+	background-color: green;	
+}
+.dot-24 {
+	background-color: purple;
+}
+.dot-25 {
+	background-color: yellow;
 }
 
 // Library
@@ -495,8 +536,11 @@ a.name {
 // Members directory(ies)
 
 .view-display-id-page_1 {
+	.views-exposed-form .views-exposed-widget .btn {
+		margin-top: 35px;
+	}
 	.view-content {
-		margin-top: 5rem;
+		margin-top: 3rem;
 	}
 	.views-row {
 		margin-bottom: 10px;
@@ -506,12 +550,17 @@ a.name {
 		h3 {
 			margin-top: 0;
 		}
-		.views-field-image-URL {
-			float: right;
-			padding-left: 5px;
+		.views-field-picture {
+			float: left;
+			max-width: 55px;
+			margin-right: 10px;
+			img {
+				border-radius: 50%;
+				border: 1px solid $theme-gold;
+			}
 		}
-		.views-field.views-field-id-1 {
-			padding-bottom: 10px;
+		.views-field-profession-s--12 {
+			clear: both;
 		}
 	}
 }
@@ -519,9 +568,13 @@ a.name {
 	.views-field {
 		padding: 0 0 15px 0;
 	}
-	.views-field.views-field-image-URL {
+	.views-field-picture {
 		float: right;
 		max-width: 50%;
+		img {
+			border-radius: 50%;
+			border: 1px solid $theme-gold;
+		}
 	}
 }
 
@@ -730,9 +783,10 @@ a.name {
 // Twitter feed
 #block-views-tweets-block {
 	position: relative;
+	margin-bottom: 30px;
 	.block-title {
 		position: relative;
-		margin-left: 11%;
+		margin-left: 14%;
 		font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	}
 	.block-title:before {
@@ -745,7 +799,7 @@ a.name {
 		font-size: 51px;
 		position: absolute;
 		top: 51%;
-		left: -12%;
+		left: -16%;
 		opacity: 1;
 		color: $theme-gold;
 	}
@@ -761,12 +815,34 @@ a.name {
 	}
 }
 
+// Civi
+.cividiscount {
+	.nowrap {
+		white-space: normal !important;
+	}
+	input#discountcode {
+		margin-top: 25px !important;
+	}
+}
+
+// Tables
+.table-responsive > .table > thead > tr > th,
+.table-responsive > .table > thead > tr > td,
+.table-responsive > .table > tbody > tr > th,
+.table-responsive > .table > tbody > tr > td,
+.table-responsive > .table > tfoot > tr > th,
+.table-responsive > .table > tfoot > tr > td {
+	white-space: normal;
+}
+
 // Footer
 .footer {
+	margin-top: 20px;
 	border: 0 none !important;
 	background-color: $theme-blue;
 	color: white;
 	font-size: 15px;
+	text-align: center;
 	a {
 		color: white;
 		text-transform: uppercase;
@@ -785,10 +861,16 @@ a.name {
 		float: left;
 		display: inline-flex;
 		font-size: 35px;
-		margin-right: 30px;
+		margin: 10px 30px 10px 40px;
 		:last-child {
 			float: none;
 		}
+	}
+	#footer-icons {
+		display: flex;
+		width: 100%;
+		margin-bottom: 1rem;
+		justify-content: center;
 	}
 	// .footer-facebook {
 	// 	background: url('images/facebook.png') 0 0 no-repeat;
@@ -879,6 +961,27 @@ a.name {
 		right: 0;
 	}
 
+	// Members directory(ies)
+
+	.view-display-id-page_1 {
+		.view-content {
+			margin-top: 5rem;
+		}
+		.views-row {
+			.views-field.views-field-id-1 {
+				padding-bottom: 10px;
+			}
+			.views-field-picture {
+				float: right;
+				padding-left: 5px;
+				max-width: 200px;
+			}
+			.views-field-profession-s--12 {
+				clear: none;
+			}
+		}
+	}
+
 	// CiviCRM styles
 
 	// Inputs
@@ -930,6 +1033,24 @@ a.name {
 		}
 		.label {
 			padding: 10px 0;
+		}
+	}
+	.cividiscount {
+		.nowrap {
+			white-space: nowrap !important;
+		}
+		input#discountcode {
+			margin-top: 0 !important;
+		}
+	}
+
+	// Twitter
+	#block-views-tweets-block {
+		.block-title {
+			margin-left: 10%;
+		}
+		.block-title:before {
+			left: -11%;
 		}
 	}
 }
@@ -1093,6 +1214,22 @@ a.name {
 		}
 		.token-input-list {
 			width: 75% !important;
+		}
+	}
+
+	// Footer
+
+	.footer {
+		margin-top: 45px;
+		text-align: left;
+		#footer-icons {
+			display: flex;
+			width: 100%;
+			margin-bottom: 2rem;
+			justify-content: left;
+		}
+		.social {
+			margin-left: 0;
 		}
 	}
 }

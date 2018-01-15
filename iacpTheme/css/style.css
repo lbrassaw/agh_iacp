@@ -10201,16 +10201,16 @@ a.name {
   margin-right: 10px; }
 
 .dot-22 {
-  background-color: red; }
+  background-color: #214C6E; }
 
 .dot-23 {
-  background-color: green; }
+  background-color: #216e43; }
 
 .dot-24 {
-  background-color: purple; }
+  background-color: #B1790B; }
 
 .dot-25 {
-  background-color: yellow; }
+  background-color: #6e214c; }
 
 #block-views-exp-clone-of-library-page .block-title {
   margin-top: 0 !important; }
@@ -10601,6 +10601,22 @@ a.name {
     max-width: 200px; }
   .view-display-id-page_1 .views-row .views-field-profession-s--12 {
     clear: none; }
+
+  .page-node-24 .region-sidebar-second {
+    position: relative; }
+    .page-node-24 .region-sidebar-second #block-block-8 {
+      width: 110%; }
+
+  .sticky {
+    position: fixed;
+    top: 130px;
+    margin: 0;
+    width: calc(33.33% - 25px); }
+
+  .abs {
+    position: absolute;
+    bottom: 10px;
+    width: calc(33.33% - 20px); }
 
   .crm-container .crm-select2,
   .crm-container .two,

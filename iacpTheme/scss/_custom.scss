@@ -400,16 +400,16 @@ a.name {
 	margin-right: 10px;
 }
 .dot-22 {
-	background-color: red;
+	background-color: $theme-blue;
 }
 .dot-23 {
-	background-color: green;	
+	background-color: #216e43;	
 }
 .dot-24 {
-	background-color: purple;
+	background-color: $theme-gold;
 }
 .dot-25 {
-	background-color: yellow;
+	background-color: #6e214c;
 }
 
 // Library
@@ -980,6 +980,27 @@ a.name {
 				clear: none;
 			}
 		}
+	}
+
+	// Events
+	.page-node-24 {
+		.region-sidebar-second {
+			position: relative;
+			#block-block-8 {
+				width: 110%;
+			}
+		}
+	}
+	.sticky {
+		position: fixed; 
+		top: 130px;
+		margin: 0;
+		width:calc(33.33% - 25px);
+	}
+	.abs {
+		position: absolute;
+		bottom: 10px;
+		width:calc(33.33% - 20px);
 	}
 
 	// CiviCRM styles

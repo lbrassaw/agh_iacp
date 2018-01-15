@@ -53,6 +53,29 @@
                $('title').text($pageResourcesTitle + ' | IACP');     
           }
 
+          // Events page sidebar sticky on scroll down
+          var topPosition = $('#block-block-8').offset().top + 180;
+          var floatingDivHeight = $('#block-block-8').outerHeight();
+          var footerFromTop = $('footer').offset().top;
+          var absPosition = footerFromTop - floatingDivHeight - 20;
+          var win = $(window);
+          var floatingDiv = $('#block-block-8');
+
+          win.scroll(function() {
+               if (window.matchMedia('(min-width: 768px)').matches) {
+                    if ((win.scrollTop() > topPosition) && (win.scrollTop() < absPosition)) {
+                         floatingDiv.addClass('sticky');
+                         floatingDiv.removeClass('abs');
+                    } else if ((win.scrollTop() > topPosition) && (win.scrollTop() > absPosition)) {
+                         floatingDiv.removeClass('sticky');
+                         floatingDiv.addClass('abs');
+                    } else {
+                         floatingDiv.removeClass('sticky');
+                         floatingDiv.removeClass('abs');
+                    }
+               }
+          });
+
      });
 
      // Hide download link from audio files in resources

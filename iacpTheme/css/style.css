@@ -10122,7 +10122,8 @@ a.name {
 .front #flexslider-1 p {
   margin-bottom: 0; }
 .front #flexslider-1 .custom-btn {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 15px !important; }
 
 .sidebar-documents {
   background-color: #f6f6f6;

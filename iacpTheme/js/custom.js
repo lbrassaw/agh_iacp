@@ -14,10 +14,23 @@
           $(".drop-down-login-container .login").removeClass("button");
 
           // Hide Join button if logged in
-          if ($('body').hasClass('logged-in')) {
-               $('#join-donate').hide();
-          }
+          // if ($('body').hasClass('logged-in')) {
+          //      $('#join-donate').hide();
+          // }
 
+          // Hide 'Resource' links depending on logged in/out
+          if ($('body').hasClass('logged-in')) {
+               $('#menu-805-1').show();
+          };
+          if ($('body').hasClass('not-logged-in')) {
+               $('#menu-805-1').hide();
+          };
+          if ($('body').hasClass('not-logged-in')) {
+               $('#menu-727-1').show();
+          };
+          if ($('body').hasClass('logged-in')) {
+               $('#menu-727-1').hide();
+          };
 
           // Remove download functionality from audio player
           $(".library-item audio").attr("controlslist", "nodownload");

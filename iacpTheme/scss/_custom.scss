@@ -480,8 +480,10 @@ a.name {
 #block-views-exp-clone-of-library-page h2 {
 	font-size: 61px !important;
 }
-.page-resources {
+.page-resources,
+.page-member-resources {
 	#edit-resources-wrapper,
+	#edit-member-resources-wrapper,
 	#edit-field-title-value-wrapper,
 	#edit-type-wrapper {
 		width: 100%;
@@ -1162,8 +1164,10 @@ a.name {
 	}
 
 	// Resource library
-	.page-resources {
+	.page-resources,
+	.page-member-resources {
 		#edit-resources-wrapper,
+		#edit-member-resources-wrapper,
 		#edit-field-title-value-wrapper,
 		#edit-type-wrapper {
 			width: 50%;

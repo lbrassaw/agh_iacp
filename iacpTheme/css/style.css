@@ -10267,43 +10267,58 @@ a.name {
   font-size: 61px !important; }
 
 .page-resources #edit-resources-wrapper,
+.page-resources #edit-member-resources-wrapper,
 .page-resources #edit-field-title-value-wrapper,
-.page-resources #edit-type-wrapper {
+.page-resources #edit-type-wrapper,
+.page-member-resources #edit-resources-wrapper,
+.page-member-resources #edit-member-resources-wrapper,
+.page-member-resources #edit-field-title-value-wrapper,
+.page-member-resources #edit-type-wrapper {
   width: 100%; }
-.page-resources #edit-type-wrapper {
+.page-resources #edit-type-wrapper,
+.page-member-resources #edit-type-wrapper {
   margin-top: 0px; }
-.page-resources #edit-type-wrapper label {
+.page-resources #edit-type-wrapper label,
+.page-member-resources #edit-type-wrapper label {
   float: left;
   margin-right: 20px;
   font-weight: 600; }
-.page-resources #edit-type-wrapper input {
+.page-resources #edit-type-wrapper input,
+.page-member-resources #edit-type-wrapper input {
   float: left;
   margin: 8px 8px 0 8px; }
 .page-resources select,
-.page-resources #edit-field-title-value {
+.page-resources #edit-field-title-value,
+.page-member-resources select,
+.page-member-resources #edit-field-title-value {
   width: 100%;
   clear: left;
   float: left;
   height: 40px;
   margin-bottom: 10px;
   border-radius: 4px !important; }
-.page-resources #edit-field-title-value {
+.page-resources #edit-field-title-value,
+.page-member-resources #edit-field-title-value {
   margin-top: 1px;
   font-size: 18px;
   color: #214C6E;
   border-color: #214C6E; }
-.page-resources select.drilldown-1 {
+.page-resources select.drilldown-1,
+.page-member-resources select.drilldown-1 {
   background-color: #214C6E;
   color: white;
   border: 0 none !important; }
-.page-resources select.drilldown-2 {
+.page-resources select.drilldown-2,
+.page-member-resources select.drilldown-2 {
   background-color: white;
   color: #214C6E;
   border-color: #214C6E; }
-.page-resources .views-submit-button {
+.page-resources .views-submit-button,
+.page-member-resources .views-submit-button {
   display: block;
   clear: left; }
-  .page-resources .views-submit-button .custom-btn {
+  .page-resources .views-submit-button .custom-btn,
+  .page-member-resources .views-submit-button .custom-btn {
     padding: 3px 40px !important;
     margin: 7px 0 !important; }
 
@@ -10728,10 +10743,16 @@ a.name {
     color: white; }
 
   .page-resources #edit-resources-wrapper,
+  .page-resources #edit-member-resources-wrapper,
   .page-resources #edit-field-title-value-wrapper,
-  .page-resources #edit-type-wrapper {
+  .page-resources #edit-type-wrapper,
+  .page-member-resources #edit-resources-wrapper,
+  .page-member-resources #edit-member-resources-wrapper,
+  .page-member-resources #edit-field-title-value-wrapper,
+  .page-member-resources #edit-type-wrapper {
     width: 50%; }
-  .page-resources #edit-type-wrapper {
+  .page-resources #edit-type-wrapper,
+  .page-member-resources #edit-type-wrapper {
     margin-top: 40px; }
 
   .crm-container .crm-select2,

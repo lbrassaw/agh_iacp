@@ -32,6 +32,9 @@
                $('#menu-727-1').hide();
           };
 
+          // Remove member only content for non-member resource page
+          $('.page-resources .drilldown-1 option:last-child').remove();
+
           // Remove download functionality from audio player
           $(".library-item audio").attr("controlslist", "nodownload");
 
@@ -61,7 +64,7 @@
                $('title').text($pageMemberTitle + ' | IACP');    
           }
           // Set meta title for resources page
-          var $pageResourcesTitle = $('.page-resources #block-views-exp-clone-of-library-page .block-title').text();
+          var $pageResourcesTitle = $('.page-resources h1.page-header').text();
           if ($('body').hasClass('page-resources')) {
                $('title').text($pageResourcesTitle + ' | IACP');     
           }
@@ -94,8 +97,7 @@
      // Hide download link from audio files in resources
      $(document).ajaxComplete(function(event, req, settings) {
           $(".library-item audio").attr("controlslist", "nodownload");
-     })
-
+     });
 
      // Drupal.behaviors.custom_flexslider_behavior = {
      //      attach: function (context, settings) {   

@@ -580,6 +580,35 @@ a.name {
 	}
 }
 
+// Staff page
+
+.view-id-staff {
+	.views-exposed-form .views-exposed-widget .btn {
+		margin-top: 35px;
+	}
+	.view-content {
+		margin-top: 1rem;
+	}
+	.views-row {
+		margin-bottom: 10px;
+		background-color: $theme-lightgrey;
+		padding: 1rem;
+		overflow: hidden;
+		h3 {
+			margin-top: 0;
+		}
+		.views-field-field-headshot {
+			float: left;
+			max-width: 55px;
+			margin-right: 10px;
+			img {
+				border-radius: 50%;
+				border: 1px solid $theme-gold;
+			}
+		}
+	}
+}
+
 // FAQs
 
 .view-cp-group-faqs {
@@ -708,6 +737,9 @@ a.name {
 		margin-top: 1rem;
 	}
 }
+span.form-required {
+	color: $theme-gold;
+}
 .token-input-list {
 	height: 34px !important;
 	width: 100% !important;
@@ -739,7 +771,12 @@ a.name {
 		color: white !important;
 	}
 }
-
+#block-webform-client-block-90 {
+	margin-top: 2rem;
+	#node-90 header {
+		display: none;
+	}
+}
 
 // // Pagination
 // .pagination > li:first-child > a,
@@ -980,6 +1017,24 @@ a.name {
 			}
 			.views-field-profession-s--12 {
 				clear: none;
+			}
+		}
+	}
+
+	// Staff page
+
+	.view-id-staff {
+		.view-content {
+			margin-top: 2rem;
+		}
+		.views-field {
+			width: 50%;
+		}
+		.views-row {
+			.views-field-field-headshot {
+				float: right;
+				padding-left: 5px;
+				max-width: 200px;
 			}
 		}
 	}
@@ -1241,6 +1296,18 @@ a.name {
 			width: 75% !important;
 		}
 	}
+	#node-90 {
+		width: 100%;
+		.form-control {
+			width: inherit !important;
+		}
+		#webform-client-form-90 {
+			margin: 2rem 0;
+			.form-action {
+				margin-top: 2rem;
+			}
+		}
+	}
 
 	// Footer
 
@@ -1287,6 +1354,18 @@ a.name {
 		}
 		.token-input-list {
 			width: 80% !important;
+		}
+	}
+	#node-90 {
+		width: 100%;
+		.form-control {
+			width: inherit !important;
+		}
+		#webform-client-form-90 {
+			margin: 2rem 0;
+			.form-actions {
+				margin-top: 2rem;
+			}
 		}
 	}
 }

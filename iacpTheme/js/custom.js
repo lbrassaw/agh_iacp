@@ -99,6 +99,17 @@
           $(".library-item audio").attr("controlslist", "nodownload");
      });
 
+     var delay = 0;
+     var offset = 150;
+
+     document.addEventListener('invalid', function(e){
+        $(e.target).addClass("invalid");
+        $('html, body').animate({scrollTop: $($(".invalid")[0]).offset().top - offset }, delay);
+     }, true);
+     document.addEventListener('change', function(e){
+        $(e.target).removeClass("invalid")
+     }, true);
+
      // Drupal.behaviors.custom_flexslider_behavior = {
      //      attach: function (context, settings) {   
      //           $('.flexslider').bind('start', function(e, slider) {

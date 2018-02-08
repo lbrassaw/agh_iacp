@@ -625,6 +625,23 @@ a.name {
 	}
 }
 
+// DONORS
+
+#node-91 .field-item {
+	h3 {
+		text-align: center;
+		border-bottom: 1px solid #333;
+		padding-bottom: 10px;
+	}
+	p {
+		columns: 2;
+		margin: 1rem 0;
+	}
+	p:last-child {
+		columns: 1;
+	}
+}
+
 // FAQs
 
 .view-cp-group-faqs {
@@ -1187,6 +1204,17 @@ span.form-required {
 		}
 		.block-title:before {
 			left: -11%;
+		}
+	}
+
+	// DONORS
+	#node-91 .field-item {
+		p {
+			columns: 3;
+			margin: 2rem 0;
+		}
+		p:last-child {
+			columns: 1;
 		}
 	}
 }

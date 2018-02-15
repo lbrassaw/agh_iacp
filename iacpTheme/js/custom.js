@@ -50,6 +50,8 @@
           $('.page-resources #edit-reset').removeClass('btn btn-default');
           $('.page-resources #edit-reset').addClass('custom-btn btn-not-filled');
 
+          // BREADCRUMBS 
+          // 
           // Hide default breadcrumb on members pages where Easy Breadcrumb is used
           $('.page-members- ol.breadcrumb').hide();
           $('.page-resources ol.breadcrumb').hide();
@@ -59,6 +61,13 @@
           var $pageMemberTitle = $('.page-members- .page-header p').text();
           $('.page-members- span.easy-breadcrumb_segment-title').text($pageMemberTitle);
 
+          // Breadcrumb for trainer registration page
+          // var homeBreadLi = $('.page-node-89 ol.breadcrumb li:first-child').outerHTML();
+          // console.log(homeBreadLi);
+          // $('.page-node-89 ol.breadcrumb li:first-child').append().html('<li>Trainings</li>');
+
+          // META INFO
+          // 
           // Set meta title for member name page
           if ($('body').hasClass('page-members-')) {
                $('title').text($pageMemberTitle + ' | IACP');    

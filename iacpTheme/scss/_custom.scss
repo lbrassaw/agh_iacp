@@ -538,6 +538,11 @@ span.dott-26 {
 }
 
 // Library
+.view-clone-of-library {
+	.view-content {
+		margin-top: 2rem;
+	}
+}
 #block-views-exp-clone-of-library-page {
 	.block-title {
 		margin-top: 0 !important;
@@ -661,7 +666,8 @@ span.dott-26 {
 }
 
 // Members directory(ies)
-.view-display-id-page_1 {
+.view-members.view-display-id-page_1,
+.view-members.view-display-id-block_1 {
 	.views-exposed-form .views-exposed-widget .btn {
 		margin-top: 35px;
 	}
@@ -690,7 +696,7 @@ span.dott-26 {
 		}
 	}
 }
-.view-display-id-page {
+.view-members.view-display-id-page {
 	.views-field {
 		padding: 0 0 15px 0;
 	}
@@ -1247,8 +1253,8 @@ span.form-required {
 	}
 
 	// Members directory(ies)
-
-	.view-display-id-page_1 {
+	.view-members.view-display-id-page_1,
+	.view-members.view-display-id-block_1 {
 		.view-content {
 			margin-top: 5rem;
 		}

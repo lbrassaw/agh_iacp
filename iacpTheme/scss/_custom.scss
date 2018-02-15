@@ -82,6 +82,7 @@ a.name {
     color: #fff !important;
     background-color: $theme-gold !important;
     border-color: $theme-gold !important;
+    text-transform: uppercase;
 }
 .btn-primary:hover {
 	background-color: white !important;
@@ -240,6 +241,9 @@ a.name {
 		background: $theme-blue;
 		color: white;
 	}
+	.header-container{
+		padding-bottom: 15px;
+	}
 	.main-container {
 		margin-top: 5vh;
 		.page-header {
@@ -262,7 +266,7 @@ a.name {
 		}
 		h1 {
 			margin-top: 0;
-			margin-bottom: 0;
+			margin-bottom: 15px;
 			padding-top: 3rem;
 			color: white;
 		}
@@ -460,6 +464,18 @@ span.dott-26 {
 	.contents {
 		padding: 1px 3px !important;
 	}
+}
+.calendar-calendar .month-view .full td.date-box.today {
+    border-color: $theme-blue;
+}
+.calendar-calendar .month-view .full tr td.single-day.today {
+    border-bottom: 2px solid $theme-blue;
+}
+.calendar-calendar .month-view .full tr td.today,
+.calendar-calendar .month-view .full tr.odd td.today,
+.calendar-calendar .month-view .full tr.even td.today {
+    border-left: 2px solid $theme-blue;
+    border-right: 2px solid $theme-blue;
 }
 .calendar-calendar td.empty {
 	color: #c6c6c6;
@@ -760,7 +776,30 @@ span.dott-26 {
 // FAQs
 .view-cp-group-faqs {
 	.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-		display: none;
+		// display: none;
+	}
+	// Arrows
+	// .view-cp-group-faqs .ui-state-default a:before {
+	// 	content: '\f3d0';
+	// 	line-height: 0;
+	// 	margin-top: 2px;
+	// 	margin-right: 10px;
+	// 	font-family: 'Ionicons';
+	// 	font-size: 15px;
+	// 	color: $theme-gold;
+	// }
+	h3.field-content {
+		margin-left: 36px;
+	}
+	.ui-state-default .ui-icon {
+		background-image: url('./images/arrow-right.png');
+		background-position: 0 50%;
+		transition: 0.5s ease;
+	}
+	.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+		background-image: url('./images/arrow-right.png');
+		transform: rotate(90deg);
+		transition: 0.5s ease;
 	}
 	.ui-accordion .ui-accordion-header {
 		display: block;
@@ -1025,6 +1064,18 @@ span.form-required {
 		margin-top: 25px !important;
 	}
 }
+.crm-submit-buttons {
+	.crm-i {
+		display: none;
+	}
+	.crm-form-submit {
+		padding: 3px 10px 2px !important;
+	}
+	a.button.cancel {
+		background-color: white !important;
+		color: $theme-gold !important;		
+	}
+}
 
 // Tables
 .table-responsive > .table > thead > tr > th,
@@ -1112,6 +1163,9 @@ span.form-required {
 				padding: 0 !important;
 			}
 		}
+		.header-container{
+			padding-bottom: 0;
+		}
 	}
 
 	// Logo position
@@ -1131,6 +1185,7 @@ span.form-required {
 			li {
 				background-color: transparent;
 				padding: 7px 10px 15px;
+				cursor: pointer;
 				a {
 					color: #333 !important;
 				}
@@ -1142,15 +1197,17 @@ span.form-required {
 				margin-left: 14px !important;
 				ul {
 					background-color: $theme-lightgrey;
-					border-left: 4px solid $theme-lightgrey;
-					border-right: 1px solid $theme-lightgrey;
+					margin-top: 3px;
+					border-left: 2px solid $theme-lightgrey;
+					border-right: 2px solid $theme-lightgrey;
+					box-shadow: 1px 1px 5px rgba(50,50,50,0.1);
 				}
 			}
 			li.sf-depth-2:first-child {
-				margin-top: 13px;
+				margin-top: 2px;
 			}
 			li.sf-depth-2:last-child {
-				margin-bottom: 5px;
+				margin-bottom: 2px;
 			}
 			li.sf-depth-2 {
 				color: white !important;
@@ -1413,7 +1470,7 @@ span.form-required {
 				margin-left: 38px !important;
 			}
 			li.sf-depth-2:first-child {
-				margin-top: 13px;
+				// margin-top: 13px;
 			}
 		}
 		.sf-sub-indicator {
@@ -1527,7 +1584,7 @@ span.form-required {
 	// Footer
 
 	.footer {
-		margin-top: 45px;
+		margin-top: 100px;
 		text-align: left;
 		#footer-icons {
 			display: flex;
@@ -1560,7 +1617,7 @@ span.form-required {
 				margin-left: 65px !important;
 			}
 			li.sf-depth-2:first-child {
-				margin-top: 13px;
+				// margin-top: 13px;
 			}
 		}
 	}

@@ -56,7 +56,8 @@ a.name {
     margin-left: 15px;
 }
 .custom-btn,
-.btn-info {
+.btn-info,
+.btn-success {
 	text-transform: uppercase;
 	font-size: 15px;
 	border: 1px solid $theme-gold !important;
@@ -133,6 +134,9 @@ a.name {
 	}
 	#drop-down-login-wrapper.enable-dd .open span span {
 	    background: none !important;
+	}
+	.dropdown ul.menu li a span {
+		display: none;
 	}
 }
 
@@ -306,6 +310,66 @@ a.name {
 			}
 		}
 	}
+}
+
+// Dashboard
+.page-dashboard,
+.page-user {
+	.breadcrumb li {
+		visibility: hidden;
+	}
+	.view-dashboard-view {
+		.views-field {
+			margin: 0 0 20px 0;
+		}
+		.views-field-image-URL {
+			margin-bottom: 50px;
+		}
+	}
+	#user-profile-form {
+		input,
+		fieldset#edit-timezone {
+			max-width: 500px;
+		}
+		.crm-contact_image-delete {
+			margin-top: 10px;
+			.crm-hover-button {
+				font-size: 13px;
+			}
+			a.crm-hover-button.action-item {
+				padding-left: 0 !important;
+				color: #333;
+			}
+			.crm-hover-button:hover,
+			a.crm-hover-button:hover,
+			a.crm-hover-button:active {
+				background-image: none !important;
+				border: 0 none !important;
+				color: inherit;
+			}
+		}
+		input#image_URL {
+			font-size: 13px;
+			line-height: 0;
+			margin-bottom: 10px;
+		}
+	}
+}
+#block-block-10 {
+	margin-bottom: 2rem;
+}
+.page-user-edit-profile-photo-22 .control-label {
+	display: none;
+}
+#user-login {
+	.form-actions {
+		margin-top: 1.5rem;
+	}
+}
+
+// Membership dashboard block
+.view-id-membership_info .view-footer {
+	margin-top: 15px;
 }
 
 
@@ -931,6 +995,9 @@ span.dott-26 {
 	.webform-component--civicrm-1-contact-1-fieldset-fieldset--main-office--phone-fax {
 		margin-top: 1rem;
 	}
+	.form-actions {
+		margin-top: 1.5rem;
+	}
 }
 span.form-required {
 	color: $theme-gold;
@@ -1265,7 +1332,7 @@ span.form-required {
 			.views-field-image-URL {
 				float: right;
 				padding-left: 5px;
-				max-width: 200px;
+				max-width: 150px;
 			}
 			.views-field-profession-s--12 {
 				clear: none;
@@ -1278,7 +1345,7 @@ span.form-required {
 		.views-field-image-URL {
 			float: right;
 			padding-left: 5px;
-			max-width: 200px;
+			max-width: 150px;
 		}
 	}
 
@@ -1295,7 +1362,18 @@ span.form-required {
 			.views-field-field-headshot {
 				float: right;
 				padding-left: 5px;
-				max-width: 200px;
+				max-width: 150px;
+			}
+		}
+	}
+
+	// Dashboard
+	.page-dashboard {
+		.region-sidebar-second {
+			.block {
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid $theme-lightgrey;
 			}
 		}
 	}
@@ -1453,6 +1531,16 @@ span.form-required {
 	.not-front {
 		.breadcrumb {
 			margin-bottom: 70px;
+		}
+	}
+
+	// Dashboard
+	.page-dashboard {
+		.breadcrumb {
+			margin-bottom: 0;
+		}
+		td.views-field.views-field-end-date {
+			min-width: 140px;
 		}
 	}
 
@@ -1624,6 +1712,33 @@ span.form-required {
 			}
 			li.sf-depth-2:first-child {
 				// margin-top: 13px;
+			}
+		}
+	}
+
+	// Members directory(ies)
+	.view-members.view-display-id-page_1,
+	.view-members.view-display-id-block_1 {
+		.views-row {
+			.views-field-image-URL {
+				max-width: 200px;
+			}
+		}
+	}
+
+	// Board and other internal groups
+	.view-internal-iacp-groups {
+		.views-field-image-URL {
+			max-width: 200px;
+		}
+	}
+
+	// Staff page
+
+	.view-id-staff {
+		.views-row {
+			.views-field-field-headshot {
+				max-width: 200px;
 			}
 		}
 	}

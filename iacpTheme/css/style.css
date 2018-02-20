@@ -9966,7 +9966,8 @@ a.name {
   margin-left: 15px; }
 
 .custom-btn,
-.btn-info {
+.btn-info,
+.btn-success {
   text-transform: uppercase;
   font-size: 15px;
   border: 1px solid #B1790B !important;
@@ -10033,6 +10034,8 @@ a.name {
     position: relative !important; }
 #block-drop-down-login-drop-down-login #drop-down-login-wrapper.enable-dd .open span span {
   background: none !important; }
+#block-drop-down-login-drop-down-login .dropdown ul.menu li a span {
+  display: none; }
 
 .collapse.in {
   width: 100%; }
@@ -10158,6 +10161,57 @@ a.name {
     margin-bottom: 10px; }
     .front #block-views-iacp-events-block-1 .views-row h5 a {
       font-weight: bold; }
+
+.page-dashboard .breadcrumb li,
+.page-user .breadcrumb li {
+  visibility: hidden; }
+.page-dashboard .view-dashboard-view .views-field,
+.page-user .view-dashboard-view .views-field {
+  margin: 0 0 20px 0; }
+.page-dashboard .view-dashboard-view .views-field-image-URL,
+.page-user .view-dashboard-view .views-field-image-URL {
+  margin-bottom: 50px; }
+.page-dashboard #user-profile-form input,
+.page-dashboard #user-profile-form fieldset#edit-timezone,
+.page-user #user-profile-form input,
+.page-user #user-profile-form fieldset#edit-timezone {
+  max-width: 500px; }
+.page-dashboard #user-profile-form .crm-contact_image-delete,
+.page-user #user-profile-form .crm-contact_image-delete {
+  margin-top: 10px; }
+  .page-dashboard #user-profile-form .crm-contact_image-delete .crm-hover-button,
+  .page-user #user-profile-form .crm-contact_image-delete .crm-hover-button {
+    font-size: 13px; }
+  .page-dashboard #user-profile-form .crm-contact_image-delete a.crm-hover-button.action-item,
+  .page-user #user-profile-form .crm-contact_image-delete a.crm-hover-button.action-item {
+    padding-left: 0 !important;
+    color: #333; }
+  .page-dashboard #user-profile-form .crm-contact_image-delete .crm-hover-button:hover,
+  .page-dashboard #user-profile-form .crm-contact_image-delete a.crm-hover-button:hover,
+  .page-dashboard #user-profile-form .crm-contact_image-delete a.crm-hover-button:active,
+  .page-user #user-profile-form .crm-contact_image-delete .crm-hover-button:hover,
+  .page-user #user-profile-form .crm-contact_image-delete a.crm-hover-button:hover,
+  .page-user #user-profile-form .crm-contact_image-delete a.crm-hover-button:active {
+    background-image: none !important;
+    border: 0 none !important;
+    color: inherit; }
+.page-dashboard #user-profile-form input#image_URL,
+.page-user #user-profile-form input#image_URL {
+  font-size: 13px;
+  line-height: 0;
+  margin-bottom: 10px; }
+
+#block-block-10 {
+  margin-bottom: 2rem; }
+
+.page-user-edit-profile-photo-22 .control-label {
+  display: none; }
+
+#user-login .form-actions {
+  margin-top: 1.5rem; }
+
+.view-id-membership_info .view-footer {
+  margin-top: 15px; }
 
 .sidebar-documents {
   background-color: #f6f6f6;
@@ -10654,6 +10708,8 @@ span.dott-26 {
   width: 100%; }
 .webform-client-form .webform-component--civicrm-1-contact-1-fieldset-fieldset--main-office--phone-fax {
   margin-top: 1rem; }
+.webform-client-form .form-actions {
+  margin-top: 1.5rem; }
 
 span.form-required {
   color: #B1790B; }
@@ -10874,7 +10930,7 @@ span.form-required {
   .view-members.view-display-id-block_1 .views-row .views-field-image-URL {
     float: right;
     padding-left: 5px;
-    max-width: 200px; }
+    max-width: 150px; }
   .view-members.view-display-id-page_1 .views-row .views-field-profession-s--12,
   .view-members.view-display-id-block_1 .views-row .views-field-profession-s--12 {
     clear: none; }
@@ -10882,7 +10938,7 @@ span.form-required {
   .view-internal-iacp-groups .views-field-image-URL {
     float: right;
     padding-left: 5px;
-    max-width: 200px; }
+    max-width: 150px; }
 
   .view-id-staff .view-content {
     margin-top: 2rem; }
@@ -10891,7 +10947,12 @@ span.form-required {
   .view-id-staff .views-row .views-field-field-headshot {
     float: right;
     padding-left: 5px;
-    max-width: 200px; }
+    max-width: 150px; }
+
+  .page-dashboard .region-sidebar-second .block {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f6f6f6; }
 
   .page-node-24 .region-sidebar-second {
     position: relative; }
@@ -10998,6 +11059,11 @@ span.form-required {
 
   .not-front .breadcrumb {
     margin-bottom: 70px; }
+
+  .page-dashboard .breadcrumb {
+    margin-bottom: 0; }
+  .page-dashboard td.views-field.views-field-end-date {
+    min-width: 140px; }
 
   #block-superfish-1 {
     width: 54% !important;
@@ -11113,6 +11179,16 @@ span.form-required {
 
   #block-superfish-1 #superfish-1 li.sf-depth-1 {
     margin-left: 65px !important; }
+
+  .view-members.view-display-id-page_1 .views-row .views-field-image-URL,
+  .view-members.view-display-id-block_1 .views-row .views-field-image-URL {
+    max-width: 200px; }
+
+  .view-internal-iacp-groups .views-field-image-URL {
+    max-width: 200px; }
+
+  .view-id-staff .views-row .views-field-field-headshot {
+    max-width: 200px; }
 
   .node-webform,
   .crm-public-form-item {

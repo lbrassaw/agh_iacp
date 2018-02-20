@@ -10,27 +10,32 @@
      $(document).ready(function() {
 
           // Add classes to login dropdown buttons
-          $(".drop-down-login-container .login").addClass("btn custom-btn btn-not-filled");
-          $(".drop-down-login-container .login").removeClass("button");
+          $(".drop-down-login-container a.login").addClass("btn custom-btn btn-not-filled");
+          $(".drop-down-login-container a.login").removeClass("button");
 
-          // Hide Join button if logged in
-          // if ($('body').hasClass('logged-in')) {
-          //      $('#join-donate').hide();
-          // }
+          // Dropdown menu - change href in a tag for user's name
+          $('.dropdown ul.menu li:first-child a').attr('href', '/dashboard');
+
+          $('.dropdown #user-login-form ul li:first-child a').attr({'href': '/civicrm/profile/create?gid=20&reset=1', 'title': 'Join IACP'}).text('Join IACP');
+
+          // If not logged in, hide dashboard link block on registration process
+          if ($('body').hasClass('not-logged-in')) {
+               $('#block-block-10').hide();
+          }
 
           // Hide 'Resource' links depending on logged in/out
           if ($('body').hasClass('logged-in')) {
                $('#menu-805-1').show();
-          };
+          }
           if ($('body').hasClass('not-logged-in')) {
                $('#menu-805-1').hide();
-          };
+          }
           if ($('body').hasClass('not-logged-in')) {
                $('#menu-727-1').show();
-          };
+          }
           if ($('body').hasClass('logged-in')) {
                $('#menu-727-1').hide();
-          };
+          }
 
           // Remove member only content for non-member resource page
           $('.page-resources .drilldown-1 option:last-child').remove();
@@ -62,9 +67,13 @@
           $('.page-members- span.easy-breadcrumb_segment-title').text($pageMemberTitle);
 
           // Breadcrumb for trainer registration page
-          // var homeBreadLi = $('.page-node-89 ol.breadcrumb li:first-child').outerHTML();
-          // console.log(homeBreadLi);
-          // $('.page-node-89 ol.breadcrumb li:first-child').append().html('<li>Trainings</li>');
+          if ($('body').hasClass('page-node-89')) {
+               $('.breadcrumb li.active').before('<li>Learn</li>');
+          }
+
+          if ($('body').hasClass('node-type-event')) {
+               $('.breadcrumb li.active').before('<li>Events</li>');
+          }
 
           // META INFO
           // 
@@ -78,28 +87,31 @@
                $('title').text($pageResourcesTitle + ' | IACP');     
           }
 
-          // Events page sidebar sticky on scroll down
-          var topPosition = $('#block-block-8').offset().top + 180;
-          var floatingDivHeight = $('#block-block-8').outerHeight();
-          var footerFromTop = $('footer').offset().top;
-          var absPosition = footerFromTop - floatingDivHeight - 20;
-          var win = $(window);
-          var floatingDiv = $('#block-block-8');
 
-          win.scroll(function() {
-               if (window.matchMedia('(min-width: 768px)').matches) {
-                    if ((win.scrollTop() > topPosition) && (win.scrollTop() < absPosition)) {
-                         floatingDiv.addClass('sticky');
-                         floatingDiv.removeClass('abs');
-                    } else if ((win.scrollTop() > topPosition) && (win.scrollTop() > absPosition)) {
-                         floatingDiv.removeClass('sticky');
-                         floatingDiv.addClass('abs');
-                    } else {
-                         floatingDiv.removeClass('sticky');
-                         floatingDiv.removeClass('abs');
+          // Events page sidebar sticky on scroll down
+          if ($('body').hasClass('page-node-24')) {
+               var topPosition = $('#block-block-8').offset().top + 160;
+               var floatingDivHeight = $('#block-block-8').outerHeight();
+               var footerFromTop = $('footer').offset().top;
+               var absPosition = footerFromTop - floatingDivHeight - 20;
+               var win = $(window);
+               var floatingDiv = $('#block-block-8');
+
+               win.scroll(function() {
+                    if (window.matchMedia('(min-width: 768px)').matches) {
+                         if ((win.scrollTop() > topPosition) && (win.scrollTop() < absPosition)) {
+                              floatingDiv.addClass('sticky');
+                              floatingDiv.removeClass('abs');
+                         } else if ((win.scrollTop() > topPosition) && (win.scrollTop() > absPosition)) {
+                              floatingDiv.removeClass('sticky');
+                              floatingDiv.addClass('abs');
+                         } else {
+                              floatingDiv.removeClass('sticky');
+                              floatingDiv.removeClass('abs');
+                         }
                     }
-               }
-          });
+               });
+          }
 
      });
 
@@ -118,26 +130,6 @@
      document.addEventListener('change', function(e){
         $(e.target).removeClass("invalid")
      }, true);
-
-     // Drupal.behaviors.custom_flexslider_behavior = {
-     //      attach: function (context, settings) {   
-     //           $('.flexslider').bind('start', function(e, slider) {
-     //                var elementOffset = $('.flex-active-slide #slider-btn').offset().top;
-     //                console.log(elementOffset);
-     //                $('.slider-line').css('height', elementOffset);
-     //                $('.slider-line').css('width', '100');
-     //           });
-     //           $('.flexslider').bind('before', function(e, slider) {
-     //                $('.slider-line').css('height', '0');
-     //                $('.slider-line').css('width', '0');
-     //           });
-     //           $('.flexslider').bind('end', function(e, slider) {
-     //                var elementOffset = $('.flex-active-slide #slider-btn').offset().top;
-     //                console.log(elementOffset);
-     //                $('.slider-line').css('height', elementOffset);
-     //                $('.slider-line').css('width', '100');
-     //           });
-     //      }
-     // };
+     
 
 })(jQuery);

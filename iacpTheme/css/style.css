@@ -9957,11 +9957,11 @@ label,
   margin-bottom: 10px !important; }
 
 a.name {
-  background: url("../logo.png") 50% 35% no-repeat !important;
+  background: url("./images/logo-mobile.png") 0% 0% no-repeat !important;
   background-size: contain !important;
   display: block;
-  width: 90%;
-  height: 55px;
+  width: 50%;
+  height: 50px;
   text-indent: -10000px;
   margin-left: 15px; }
 
@@ -10861,8 +10861,8 @@ span.form-required {
     padding-bottom: 0; }
 
   a.name {
-    width: 100%;
-    background: url("../logo.png") 10px 50% no-repeat !important;
+    width: 110%;
+    background: url("./images/logo-updated.png") 0 0 no-repeat !important;
     background-size: contain !important;
     margin-left: 0; }
 
@@ -11056,6 +11056,12 @@ span.form-required {
     height: 550px;
     top: 0;
     right: 0; }
+
+  a.name {
+    width: 80%;
+    background: url("./images/logo-updated.png") 10px 0 no-repeat !important;
+    background-size: contain !important;
+    margin-left: 0; }
 
   .not-front .breadcrumb {
     margin-bottom: 70px; }

@@ -10,33 +10,34 @@
      $(document).ready(function() {
 
           // Add classes to login dropdown buttons
-          $(".drop-down-login-container a.login").addClass("btn custom-btn btn-not-filled");
-          $(".drop-down-login-container a.login").removeClass("button");
+          $(".drop-down-login-container .login").addClass("btn custom-btn btn-not-filled");
+          $(".drop-down-login-container .login").removeClass("button");
 
           // Dropdown menu - change href in a tag for user's name
           $('.dropdown ul.menu li:first-child a').attr('href', '/dashboard');
 
           $('.dropdown #user-login-form ul li:first-child a').attr({'href': '/civicrm/profile/create?gid=20&reset=1', 'title': 'Join IACP'}).text('Join IACP');
 
+          // $('#block-block-10').appendTo('.breadcrumb');
+
           // If not logged in, hide dashboard link block on registration process
           if ($('body').hasClass('not-logged-in')) {
                $('#block-block-10').hide();
-               $('.drop-down-login-container .form-actions').insertAfter($('.drop-down-login-container .form-item-pass'));
-          }
+          };
 
           // Hide 'Resource' links depending on logged in/out
           if ($('body').hasClass('logged-in')) {
                $('#menu-805-1').show();
-          }
+          };
           if ($('body').hasClass('not-logged-in')) {
                $('#menu-805-1').hide();
-          }
+          };
           if ($('body').hasClass('not-logged-in')) {
                $('#menu-727-1').show();
-          }
+          };
           if ($('body').hasClass('logged-in')) {
                $('#menu-727-1').hide();
-          }
+          };
 
           // Remove member only content for non-member resource page
           $('.page-resources .drilldown-1 option:last-child').remove();
@@ -70,28 +71,28 @@
           // Breadcrumb for trainer registration page
           if ($('body').hasClass('page-node-89')) {
                $('.breadcrumb li.active').before('<li>Learn</li>');
-          }
+          };
 
           if ($('body').hasClass('node-type-event')) {
                $('.breadcrumb li.active').before('<li>Events</li>');
-          }
+          };
 
           // META INFO
           // 
           // Set meta title for member name page
           if ($('body').hasClass('page-members-')) {
                $('title').text($pageMemberTitle + ' | IACP');    
-          }
+          };
           // Set meta title for resources page
           var $pageResourcesTitle = $('.page-resources h1.page-header').text();
           if ($('body').hasClass('page-resources')) {
                $('title').text($pageResourcesTitle + ' | IACP');     
-          }
+          };
 
 
           // Events page sidebar sticky on scroll down
           if ($('body').hasClass('page-node-24')) {
-               var topPosition = $('#block-block-8').offset().top + 160;
+               var topPosition = $('#block-block-8').offset().top + 180;
                var floatingDivHeight = $('#block-block-8').outerHeight();
                var footerFromTop = $('footer').offset().top;
                var absPosition = footerFromTop - floatingDivHeight - 20;
@@ -109,10 +110,10 @@
                          } else {
                               floatingDiv.removeClass('sticky');
                               floatingDiv.removeClass('abs');
-                         }
-                    }
+                         };
+                    };
                });
-          }
+          };
 
      });
 

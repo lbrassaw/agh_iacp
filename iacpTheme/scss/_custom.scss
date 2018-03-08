@@ -95,7 +95,9 @@ a.name {
 	right: 60px;
 	top: 0;
 }
-
+#printer-friendly {
+	visibility: hidden;
+}
 
 // Drop down login
 #block-drop-down-login-drop-down-login {
@@ -324,6 +326,11 @@ a.name {
 		}
 		.views-field-image-URL {
 			margin-bottom: 50px;
+		}
+		.views-field-nothing-1 {
+			.custom-btn {
+				margin-top: 0;
+			}
 		}
 	}
 	#user-profile-form {
@@ -982,16 +989,22 @@ span.dott-26 {
 	.form-control {
 		box-shadow: none !important;
 	}
-	.webform-layout-box > .form-item input {
-		max-width: 100%;
+	.form-control[disabled],
+	.form-control[readonly],
+	fieldset[disabled] .form-control {
+		background-color: transparent !important;
+		border: 0 none;
 	}
-	.webform-layout-box.horiz > * + * {
-		margin-left: 0;
-		width: 100%;
-	}
-	.webform-layout-box.horiz > *, .webform-layout-box.equal > * {
-		width: 100%;
-	}
+	// .webform-layout-box > .form-item input {
+	// 	max-width: 100%;
+	// }
+	// .webform-layout-box.horiz > * + * {
+	// 	margin-left: 0;
+	// 	width: 100%;
+	// }
+	// .webform-layout-box.horiz > *, .webform-layout-box.equal > * {
+	// 	width: 100%;
+	// }
 	.webform-component--civicrm-1-contact-1-fieldset-fieldset--main-office--phone-fax {
 		margin-top: 1rem;
 	}
@@ -1148,6 +1161,13 @@ span.form-required {
 		background-color: white !important;
 		color: $theme-gold !important;		
 	}
+}
+.crm-container .crm-form-block {
+	background-color: transparent;
+}
+.crm-container .status {
+	background-color: transparent;
+	border: 1px solid $theme-gold;
 }
 
 // Tables

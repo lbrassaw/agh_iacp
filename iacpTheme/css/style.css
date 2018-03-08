@@ -10005,6 +10005,9 @@ a.name {
   right: 60px;
   top: 0; }
 
+#printer-friendly {
+  visibility: hidden; }
+
 #block-drop-down-login-drop-down-login a.login {
   color: white !important; }
 #block-drop-down-login-drop-down-login a.login:hover {
@@ -10171,6 +10174,9 @@ a.name {
 .page-dashboard .view-dashboard-view .views-field-image-URL,
 .page-user .view-dashboard-view .views-field-image-URL {
   margin-bottom: 50px; }
+.page-dashboard .view-dashboard-view .views-field-nothing-1 .custom-btn,
+.page-user .view-dashboard-view .views-field-nothing-1 .custom-btn {
+  margin-top: 0; }
 .page-dashboard #user-profile-form input,
 .page-dashboard #user-profile-form fieldset#edit-timezone,
 .page-user #user-profile-form input,
@@ -10699,13 +10705,11 @@ span.dott-26 {
     color: #B1790B; }
 .webform-client-form .form-control {
   box-shadow: none !important; }
-.webform-client-form .webform-layout-box > .form-item input {
-  max-width: 100%; }
-.webform-client-form .webform-layout-box.horiz > * + * {
-  margin-left: 0;
-  width: 100%; }
-.webform-client-form .webform-layout-box.horiz > *, .webform-client-form .webform-layout-box.equal > * {
-  width: 100%; }
+.webform-client-form .form-control[disabled],
+.webform-client-form .form-control[readonly],
+.webform-client-form fieldset[disabled] .form-control {
+  background-color: transparent !important;
+  border: 0 none; }
 .webform-client-form .webform-component--civicrm-1-contact-1-fieldset-fieldset--main-office--phone-fax {
   margin-top: 1rem; }
 .webform-client-form .form-actions {
@@ -10799,6 +10803,13 @@ span.form-required {
 .crm-submit-buttons a.button.cancel {
   background-color: white !important;
   color: #B1790B !important; }
+
+.crm-container .crm-form-block {
+  background-color: transparent; }
+
+.crm-container .status {
+  background-color: transparent;
+  border: 1px solid #B1790B; }
 
 .table-responsive > .table > thead > tr > th,
 .table-responsive > .table > thead > tr > td,

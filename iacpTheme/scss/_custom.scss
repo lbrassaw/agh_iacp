@@ -1384,7 +1384,6 @@ span.form-required {
 	}
 
 	// Staff page
-
 	.view-id-staff {
 		.view-content {
 			margin-top: 2rem;
@@ -1502,6 +1501,14 @@ span.form-required {
 		}
 		.block-title:before {
 			left: -11%;
+		}
+	}
+
+	// Webform
+	.webform-client-form {
+		.inline-field {
+			display: inline-block;
+			margin-right: 1rem;
 		}
 	}
 
@@ -1690,26 +1697,26 @@ span.form-required {
 	}
 
 	// Webforms
-	.node-webform,
+	// .node-webform,
 	.crm-public-form-item {
 		width: 80%;
 	}
 	.webform-client-form {
-		.webform-layout-box > .form-item input {
-			max-width: 75%;
+		.inline-field {
+			display: inline-block;
+			margin-right: 1rem;
 		}
-		.form-control {
-			max-width: 75%;
-		}
-		.token-input-list {
-			width: 75% !important;
-		}
+		// .webform-layout-box > .form-item input {
+		// 	max-width: 75%;
+		// }
+		// .form-control {
+		// 	max-width: 75%;
+		// }
+		// .token-input-list {
+		// 	width: 75% !important;
+		// }
 	}
 	#node-90 {
-		width: 100%;
-		.form-control {
-			width: inherit !important;
-		}
 		#webform-client-form-90 {
 			margin: 2rem 0;
 			.form-action {
@@ -1787,26 +1794,22 @@ span.form-required {
 	}
 
 	// Webforms
-	.node-webform,
+	// .node-webform,
 	.crm-public-form-item {
 		width: 60%;
 	}
 	.webform-client-form {
-		.webform-layout-box > .form-item input {
-			max-width: 60%;
-		}
-		.form-control {
-			max-width: 100%;
-		}
-		.token-input-list {
-			width: 80% !important;
-		}
+		// .webform-layout-box > .form-item input {
+		// 	max-width: 60%;
+		// }
+		// .form-control {
+		// 	max-width: 100%;
+		// }
+		// .token-input-list {
+		// 	width: 80% !important;
+		// }
 	}
 	#node-90 {
-		width: 100%;
-		.form-control {
-			width: inherit !important;
-		}
 		#webform-client-form-90 {
 			margin: 2rem 0;
 			.form-actions {

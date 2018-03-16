@@ -11042,6 +11042,10 @@ span.form-required {
   #block-views-tweets-block .block-title:before {
     left: -11%; }
 
+  .webform-client-form .inline-field {
+    display: inline-block;
+    margin-right: 1rem; }
+
   #node-91 .field-item p {
     columns: 3;
     margin: 2rem 0; }
@@ -11169,25 +11173,17 @@ span.form-required {
     width: 50%;
     height: 12em; }
 
-  .node-webform,
   .crm-public-form-item {
     width: 80%; }
 
-  .webform-client-form .webform-layout-box > .form-item input {
-    max-width: 75%; }
-  .webform-client-form .form-control {
-    max-width: 75%; }
-  .webform-client-form .token-input-list {
-    width: 75% !important; }
+  .webform-client-form .inline-field {
+    display: inline-block;
+    margin-right: 1rem; }
 
-  #node-90 {
-    width: 100%; }
-    #node-90 .form-control {
-      width: inherit !important; }
-    #node-90 #webform-client-form-90 {
-      margin: 2rem 0; }
-      #node-90 #webform-client-form-90 .form-action {
-        margin-top: 2rem; }
+  #node-90 #webform-client-form-90 {
+    margin: 2rem 0; }
+    #node-90 #webform-client-form-90 .form-action {
+      margin-top: 2rem; }
 
   .footer {
     margin-top: 100px;
@@ -11219,25 +11215,13 @@ span.form-required {
   .view-id-staff .views-row .views-field-field-headshot {
     max-width: 200px; }
 
-  .node-webform,
   .crm-public-form-item {
     width: 60%; }
 
-  .webform-client-form .webform-layout-box > .form-item input {
-    max-width: 60%; }
-  .webform-client-form .form-control {
-    max-width: 100%; }
-  .webform-client-form .token-input-list {
-    width: 80% !important; }
-
-  #node-90 {
-    width: 100%; }
-    #node-90 .form-control {
-      width: inherit !important; }
-    #node-90 #webform-client-form-90 {
-      margin: 2rem 0; }
-      #node-90 #webform-client-form-90 .form-actions {
-        margin-top: 2rem; } }
+  #node-90 #webform-client-form-90 {
+    margin: 2rem 0; }
+    #node-90 #webform-client-form-90 .form-actions {
+      margin-top: 2rem; } }
 .flexslider .slides img {
   width: 650px;
   max-width: 100%;

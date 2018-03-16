@@ -10234,8 +10234,10 @@ a.name {
   .sidebar-documents .pdf,
   .sidebar-documents .doc,
   .sidebar-documents .docx,
+  .sidebar-documents .ppt,
   .sidebar-documents .pptx,
-  .sidebar-documents .mp3 {
+  .sidebar-documents .mp3,
+  .sidebar-documents .zip {
     padding-left: 50px;
     display: block;
     margin-left: 10px;
@@ -10248,11 +10250,15 @@ a.name {
   .sidebar-documents .docx {
     background: url("images/doc.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
+  .sidebar-documents .ppt,
   .sidebar-documents .pptx {
     background: url("images/ppt.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
   .sidebar-documents .mp3 {
     background: url("images/mp3.svg") 0 25% no-repeat;
+    background-size: 30px 40px; }
+  .sidebar-documents .zip {
+    background: url("images/zip.svg") 0 25% no-repeat;
     background-size: 30px 40px; }
   .sidebar-documents .related-document-item:hover {
     text-decoration: none !important; }
@@ -10434,8 +10440,10 @@ span.dott-26 {
   .library-item .pdf,
   .library-item .doc,
   .library-item .docx,
+  .library-item .ppt,
   .library-item .pptx,
-  .library-item .mp3 {
+  .library-item .mp3,
+  .library-item .zip {
     display: block;
     float: left;
     width: 100px;
@@ -10449,11 +10457,15 @@ span.dott-26 {
   .library-item .docx {
     background: url("images/doc.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
+  .library-item .ppt,
   .library-item .pptx {
     background: url("images/ppt.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
   .library-item .mp3 {
     background: url("images/mp3.svg") 0 0 no-repeat;
+    background-size: 90px 90px; }
+  .library-item .zip {
+    background: url("images/zip.svg") 0 0 no-repeat;
     background-size: 90px 90px; }
   .library-item audio {
     vertical-align: bottom !important; }

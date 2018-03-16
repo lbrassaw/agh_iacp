@@ -399,8 +399,10 @@ a.name {
     .pdf,
     .doc,
     .docx,
+    .ppt,
     .pptx,
-    .mp3 {
+    .mp3,
+    .zip {
 		padding-left: 50px;
 		display: block;
 		margin-left: 10px;
@@ -416,12 +418,17 @@ a.name {
 		background: url('images/doc.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
+	.ppt,
 	.pptx {
 		background: url('images/ppt.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
 	.mp3 {
 		background: url('images/mp3.svg') 0 25% no-repeat;
+		background-size: 30px 40px;
+	}
+	.zip {
+		background: url('images/zip.svg') 0 25% no-repeat;
 		background-size: 30px 40px;
 	}
 	.related-document-item:hover {
@@ -634,8 +641,10 @@ span.dott-26 {
     .pdf,
     .doc,
     .docx,
+    .ppt,
     .pptx,
-    .mp3 {
+    .mp3,
+    .zip {
     	display: block;
     	float: left;
     	width: 100px;
@@ -652,12 +661,17 @@ span.dott-26 {
 		background: url('images/doc.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
 	}
+	.ppt,
 	.pptx {
 		background: url('images/ppt.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
 	}
 	.mp3 {
 		background: url('images/mp3.svg') 0 0 no-repeat;
+		background-size: 90px 90px;
+	}
+	.zip {
+		background: url('images/zip.svg') 0 0 no-repeat;
 		background-size: 90px 90px;
 	}
 	audio {
